@@ -1,4 +1,89 @@
 block content
 include elements/_top_document
-
-	include elements/_bottom_document
+.content
+	.container
+		.row
+			#collumn-left
+				.col-sm-3
+					div.list-group-item-heading
+						a.item-head Тематические разделы
+					ul.list-unstyled.list-group
+						- var list_gr = ["Ингаляторы (небулайзеры)","Устройства для обеспечения проходимости дыхательных путей","Оборудование для кислородной терапии","Аппараты дыхательные","Медицинская мебель","Светильники и отсасыватели хирургические, медицинские","Предметы ухода за больными","Весы для взвешивания людей, динамометры,  секундомеры","Иглы хирургические","Инструмент для косметологических и парикмахерских салонов","Хирургический инструмент, шприцы, иглы иньекционные","Лампы и облучатели бактерицидные","Лотки","Оборудование для иммобилизации","Разное оборудование","Физиотерапия","Ветеринария","Кипятильники , биксы , стерилизаторы","Лабораторное оборудование","Запасные части"];
+							for name in list_gr
+								li
+									a.list-item= name
+			#content
+				#advantages.col-sm-8.col-sm-offset-1
+					.col-sm-3.desc-item
+						+img('icons/features/time1.svg')
+						.desc
+							p Более 20 лет на украинском рынке
+					.col-sm-3.desc-item
+						+img('icons/features/delivery.svg')
+						.desc
+							p Быстрая доставка по всей Украине
+					.col-sm-3.desc-item
+						+img('icons/features/money.svg')
+						.desc
+							p Лучшие цены, акции и скидки
+					.col-sm-3.desc-item
+						+img('icons/features/guarantee.svg')
+						.desc
+							p Гарании качеста
+				#popular-categories.col-sm-8.col-sm-offset-1
+					.popular-head
+						h3 Популярные категории
+					.col-sm-3.desc-item
+						a
+							+img('1.jpg')
+							.desc
+								p Тонометры
+					.col-sm-3.desc-item
+						a
+							+img('2.jpg')
+							.desc
+								p Небулайзеры (Ингаляторы)
+					.col-sm-3.desc-item
+						a
+							+img('3.jpg')
+							.desc
+								p Весы
+					.col-sm-3.desc-item
+						a
+							+img('4.jpg')
+							.desc
+								p Ирригаторы и аксессуары
+					.col-sm-3.desc-item
+						a
+							+img('5.jpg')
+							.desc
+								p Бандажи и корсеты
+					.col-sm-3.desc-item
+						a
+							+img('6.jpg')
+							.desc
+								p Глюкометры и расходные материалы
+					.col-sm-3.desc-item
+						a
+							+img('7.jpg')
+							.desc
+								p Массажеры для ног и тела
+					.col-sm-3.desc-item
+						a
+							+img('8.jpg')
+							.desc
+								p Очистители воздуха
+section.callback
+	#callback
+		.container
+			.row
+				h3 Трудности с выбором товара?
+				h5 Закажите в один клик обратный звонок у нашего специалиста!
+				.col-sm-8.form-callback-big
+					form
+						input(placeholder="Ваше имя")
+						input(placeholder="Контактный номер")
+						button ПЕРЕЗВОНИТЬ
+				#img.col-sm-4.pull-right
+					+img('callback.png')
+include elements/_bottom_document

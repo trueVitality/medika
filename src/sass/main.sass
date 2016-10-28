@@ -48,6 +48,7 @@ header
           padding-right: 10px
           img
             width: 17px
+            height: 17px
     div.col-sm-3
       padding-right: 0px
       margin-top: 20px
@@ -57,13 +58,15 @@ header
           padding-right: 0px
     div.col-sm-1
       margin-top: 20px
-      #callback
+      #callback-form
         img
+          height: 35px
           width: 35px
     div.col-sm-5
       margin-top: 20px
       #search
         img
+          height: 35px
           width: 35px
     div.col-sm-1
       margin-top: 20px
@@ -85,14 +88,14 @@ header
             a
               font-family: "ProximaNovaCondensedRegular", sans-serif
               font-size: em(18px)
-              padding: 10px 0
+              padding: 15px 0
               color: #fff
             &:hover
               a
                 color: #3385d5
                 background-color: transparent
               .drop-links:after
-                z-index: 1
+                z-index: 2
                 content: ""
                 position: absolute
                 top: 100%
@@ -103,8 +106,10 @@ header
                 margin-left: -8px
               #content_drop
                 display: block
+                z-index: 1
             #content_drop
               display: none
+              background-color: #fff
               &:after
                 content: ""
                 border: $main-color solid 1px
@@ -116,22 +121,130 @@ header
               text-align: left
               padding: 0
               .items
-                margin: 20px 0
+                margin: 20px 0 20px 10px
                 .thead
                   padding: 0 0 5px 0
                   a
                     font-family: "opensansbold", sans-serif
                     font-size: 12px
                     color: $hover-color
+                    &:hover
+                      text-decoration: underline
                 ul
                   li
                     a
                       color: #2c2c2c
                       font-family: "opensansregular", sans-serif
                       font-size: 12px
-
-
-
-
-
-
+                      &:hover
+                        text-decoration: underline
+.content
+  padding: 30px 0
+  #collumn-left
+    .list-group-item-heading
+      padding: 10px 0 10px 7px
+      a
+        font-family: "opensansbold", sans-serif
+        font-size: 18px
+        color: $hover-color
+    .list-group
+      li
+        margin: 0
+        padding: 2px 0
+        padding-left: 10px
+        border-right: 2px solid transparent
+        &:hover
+          border-right: 2px solid $main-color
+          a.list-item
+            color: $main-color
+        margin: 5px 0
+        a.list-item
+          font-family: "opensansregular", sans-serif
+          font-size: 12px
+  #content
+    #advantages
+      margin-top: 15px
+      background-color: $main-color
+      .desc-item
+        padding-bottom: 10px
+        text-align: center
+        img
+          margin: 20px 0 10px 0
+          width: 65px
+          height: 65px
+        .desc
+          p
+            font-family: "opensansregular", sans-serif
+            font-size: 12px
+            color: #fff
+    #popular-categories
+      padding-bottom: 50px
+      .popular-head
+        h3
+          margin-top: 50px
+          width: 100%
+          font-size: 24px
+          font-family: "opensansbold", sans-serif
+          color: $main-color
+      .desc-item
+        margin-top: 50px
+        margin-bottom: 20px
+        border: 1px solid transparent
+        &:hover
+          border: 1px solid #c4c4c4
+        a
+          img
+            padding-bottom: 10px
+          .desc
+            text-align: center
+            p
+              font-family: "opensanssemibold", sans-serif
+              color: $hover-color
+              font-size: 12px
+section.callback
+  background-color: $main-color
+  padding: 20px 0 30px 0
+  #callback
+    position: relative
+    h3
+      text-transform: uppercase
+      font-size: 18px
+      font-family: "opensansbolde",sans-serif
+      color: #fff
+    h5
+      font-family: "opensanssemibold", sans-serif
+      font-size: 14px
+      color: #fff
+    .form-callback-big
+      form
+        padding-top: 15px
+        input
+          background-color: transparent
+          width: 21%
+          border: none
+          border-bottom: 2px solid #fff
+          margin-right: 30px
+          &:focus
+            border: none
+            border-bottom: 2px solid #fff
+          @include placeholder
+            color: #fff
+            font-family: "opensanslightitalic", sans-serif
+            text-indent: 10px
+        button
+          display: inline-block
+          font-family: "opensanssemibold", sans-serif
+          font-size: 18px
+          padding: 5px 25px
+          color: #fff
+          background-color: transparent
+          border: 2px solid #fff
+          transition: all .3s
+          &:hover
+            background-color: #fff
+            color: $main-color
+            transition: all .3s
+    #img
+      position: absolute
+      right: 0
+      bottom: -30px
