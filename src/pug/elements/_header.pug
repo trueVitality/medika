@@ -1,11 +1,172 @@
 include ../inc/_mixins
 
 header
+	nav#top
+		div.container
+			div.row
+				div.col-sm-2
+					div.logo
+						+img('LOGO.png')
+				div.col-sm-5.b
+					div#top-links.nav.pull-left
+						ul.list-inline
+							- var links = ["Оплата", "Доставка", "Контакты", "Новости и статьи"];
+								for name in links
+									li
+										a= name
+				div.col-sm-2.b
+					div#currency.pull-right
+						ul.list-inline
+							- var currency = ["€","$","ГРН","РУБ"];
+								for name in currency
+									li
+										a= name
+				div.col-sm-2.b
+					div#language.pull-left
+						ul.list-inline
+							- var language = ["УКР","РУ","ENG"];
+								for name in language
+									li
+										a= name
+				div.col-sm-1.b
+					div#login
+						a.icon
+							+img('icons/user.svg')
+						a.text Войти
+				div.col-sm-3
+					div#phones
+						ul.list-inline
+							- var phones = ["(098) 462-99-66", "(050) 352-76-20", "(063) 237-62-23", "medica@voliacable.com"];
+								for name in phones
+									li= name
+				div.col-sm-1
+					div#callback.pull-right
+						a
+							+img('icons/callback.svg')
+				div.col-sm-5
+					div#search.pull-right
+						a
+							+img('icons/search.svg')
+				div.col-sm-1
+					div#bascket
+						a
+							+img('icons/bascket_item.svg')
+	nav#menu
+		div.container-fluid
+			div.container
+				div.row
+					div.collapse.navbar-collapse.navbar-ex1-collapse
+						ul.nav.navbar-nav
+							li.dropdown
+								a.drop-links
+									|	Медицинское
+									br
+									|	оборудование
+								div#content_drop.container
+									div.col-sm-3
+										div.items
+											div.thead
+												a ТОНОМЕТРЫ
+											ul.list-unstyled
+												- var items = ["Автоматические тонометры","Полуавтоматические тонометры","Тонометры на запястье","Механические тонометры","Аксессуары к тонометрам"];
+													for name in items
+														li
+															a= name
+										div.items
+											div.thead
+												a ИНГАЛЯТОРЫ (НЕБУЛАЙЗЕРЫ)
+											ul.list-unstyled
+												- var items = ["Ингаляторы (небулайзеры) компрессорные", "Ингаляторы (небулайзеры) ультразвуковые, МЕШ"];
+													for name in items
+														li
+															a= name
+									div.col-sm-3
+										div.items
+											div.thead
+												a ВИТАФОН
+											ul.list-unstyled
+												- var items = ["Витафон"];
+													for name in items
+														li
+															a= name
+										div.items
+											div.thead
+												a ПУЛЬСОМЕТРЫ
+											ul.list-unstyled
+												- var items = ["Пульсометры", "ШАГОМЕРЫ", "Шагомеры"];
+													for name in items
+														li
+															a= name
+										div.items
+											div.thead
+												a ИРРИГАТОРЫ И АСЕССУАРЫ
+											ul.list-unstyled
+												- var items = ["Ирригаторы"];
+													for name in items
+														li
+															a= name
+									div.col-sm-3
+										div.items
+											div.thead
+												a УХОД ЗА ПОЛОСТЬЮ РТА
+											ul.list-unstyled
+												- var items = ["Зубные щетки", "Зубные пасты, гели", "Ополаскиватели для рта, спреи", "Зубные нити, флоссы, ершики, каппы", "Средства для протезов, имплантов"];
+													for name in items
+														li
+															a= name
+										div.items
+															div.thead
+																a СЛУХОВЫЕ АППАРАТЫ
+															ul.list-unstyled
+																- var items = ["Слуховые аппараты", "Дарсонваль", "Насадки (электроды) на дарсонваль"];
+																	for name in items
+																		li
+																			a= name
+									div.col-sm-3
+										div.items
+											div.thead
+												a ТОНОМЕТРЫ
+											ul.list-unstyled
+												- var items = ["Автоматические тонометры", "Полуавтоматические тонометры", "Тонометры на запястье", "Механические тонометры", "Аксессуары к тонометрам"];
+													for name in items
+														li
+															a= name
+										div.items
+											div.thead
+												a ИНГАЛЯТОРЫ (НЕБУЛАЙЗЕРЫ)
+											ul.list-unstyled
+												- var items = ["Ингаляторы (небулайзеры) компрессорные", "Ингаляторы (небулайзеры) ультразвуковые, МЕШ"];
+													for name in items
+														li
+															a= name
+							li.dropdown
+								a.drop-links
+									|	Инструмент, лотки,
+									br
+									|	иглы хирургические
+								div#content_drop.container
+							li.dropdown
+								a.drop-links
+									| Лабораторное
+									br
+									| оборудование
+								div#content_drop.container
+							li.dropdown
+								a.drop-links
+									| Ветеринарное оборудование
+									br
+									| и инструмент
+								div#content_drop.container
+							li.dropdown
+								a.drop-links
+									| Весы, ростомеры,
+									br
+									| динамометры секундомеры
+								div#content_drop.container
+							li.dropdown
+								a.drop-links
+									| Запасные части
+									br
+									| и сервис
+								div#content_drop.container
 
-	//- KEEP CALM AND CODE
-	div
-		+img("crown.png")
-	p KEEP
-	p CALM
-	p.ease and
-	p CODE

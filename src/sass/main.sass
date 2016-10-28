@@ -2,23 +2,136 @@
 @import "helpers/fonts"
 @import "helpers/vars"
 
-// KEEP CALM AND CODE (DELETE ALL CODE)
-body
-	background-color: #888888
-div
-	text-align: center
-	img
-		text-align: center
-		width: 100px
-p
-	font-family: "opensans", sans-serif
-	text-align: center
-	font-size: em(35)
-	margin: 0
-	padding: 0
-.ease
-	font-size: em(25)
-// KEEP CALM AND CODE (DELETE ALL CODE)
-
-
 // STYLING HERE
+body
+  overflow-x: hidden
+a
+  text-decoration: none
+  color: #000
+  &:hover
+    color: $main-color
+    text-decoration: none
+    cursor: pointer
+
+header
+  font-family: "opensansregular", sans-serif
+  font-size: em(14px)
+  nav#top
+    padding-bottom: 10px
+    div.col-sm-2
+      border-bottom: none
+      .logo
+        margin-top: 10px
+        text-align: center
+        img
+          width: 65%
+    div.col-sm-5.b
+      border-bottom: 1px solid $main-color
+      margin-top: 20px
+      #top-links
+        li
+          padding-right: 30px
+    div.col-sm-2.b
+      border-bottom: 1px solid $main-color
+      margin-top: 20px
+      #currency
+    div.col-sm-2.b
+      border-bottom: 1px solid $main-color
+      margin-top: 20px
+      #language
+    div.col-sm-1.b
+      border-bottom: 1px solid $main-color
+      margin-top: 20px
+      padding-bottom: 9px
+      #login
+        .icon
+          padding-right: 10px
+          img
+            width: 17px
+    div.col-sm-3
+      padding-right: 0px
+      margin-top: 20px
+      li
+        padding-right: 20px
+        &:nth-last-child
+          padding-right: 0px
+    div.col-sm-1
+      margin-top: 20px
+      #callback
+        img
+          width: 35px
+    div.col-sm-5
+      margin-top: 20px
+      #search
+        img
+          width: 35px
+    div.col-sm-1
+      margin-top: 20px
+      #bascket
+        text-align: center
+        img
+          width: 35px
+  nav#menu
+    .container-fluid
+      background-color: $main-color
+      .collapse
+        padding-right: 0
+        padding-left: 0
+        .nav.navbar-nav
+          width: 100%
+          li.dropdown
+            text-align: center
+            width: 16.6666667%
+            a
+              font-family: "ProximaNovaCondensedRegular", sans-serif
+              font-size: em(18px)
+              padding: 10px 0
+              color: #fff
+            &:hover
+              a
+                color: #3385d5
+                background-color: transparent
+              .drop-links:after
+                z-index: 1
+                content: ""
+                position: absolute
+                top: 100%
+                left: 50%
+                border-top: 8px solid $main-color
+                border-left: 8px solid transparent
+                border-right: 8px solid transparent
+                margin-left: -8px
+              #content_drop
+                display: block
+            #content_drop
+              display: none
+              &:after
+                content: ""
+                border: $main-color solid 1px
+                width: 170%
+                bottom: 0
+                left: -400px
+                position: absolute
+              position: absolute
+              text-align: left
+              padding: 0
+              .items
+                margin: 20px 0
+                .thead
+                  padding: 0 0 5px 0
+                  a
+                    font-family: "opensansbold", sans-serif
+                    font-size: 12px
+                    color: $hover-color
+                ul
+                  li
+                    a
+                      color: #2c2c2c
+                      font-family: "opensansregular", sans-serif
+                      font-size: 12px
+
+
+
+
+
+
