@@ -12,6 +12,8 @@ a
     color: $main-color
     text-decoration: none
     cursor: pointer
+input, textarea, button
+    outline: none
 
 header
   font-family: "opensansregular", sans-serif
@@ -138,11 +140,80 @@ header
                       font-size: 12px
                       &:hover
                         text-decoration: underline
+
+#slideshow
+  background: linear-gradient(to bottom, #fff, #b1d3f4)
+  .slick-top
+    text-align: center
+    z-index: 0
+    .slick-item
+      outline: none
+      z-index: 0
+      height: 320px
+      h1
+        position: absolute
+        bottom: 65px
+        color: $hover-color
+        font-family: "opensansbold", sans-serif
+        font-size: 30px
+        text-transform: uppercase
+      h3
+        bottom: 30px
+        color: #fff
+        position: absolute
+        font-size: 30px
+        font-family: "opensanssemibold", sans-serif
+      img
+        float: right
+        height: 320px
+
+.slick-prev
+  z-index: 1
+  left: 25px
+  width: 40px
+  height: 40px
+.slick-prev::before
+  content: url(../img/icons/arrow_left.svg)
+  color: $main-color
+.slick-next
+  right: 25px
+  width: 40px
+  height: 40px
+.slick-next:before
+  content: url(../img/icons/arrow_right.svg)
+  color: $main-color
+.slick-dots li
+  margin: 0
+.slick-dots
+  position: absolute
+  bottom: 0
+.slick-dots li button
+  width: 12px
+  height: 12px
+  position: absolute
+  border: 1px solid #777
+  border-radius: 50%
+.slick-dots li button:before
+  content: ''
+.slick-dots li button:hover:before
+  content: ''
+.slick-dots li.slick-active button:before
+  content: ''
+  width: 6px
+  height: 6px
+  background: #777
+  opacity: 1
+  border-radius: 50%
+  top: 50%
+  left: 50%
+  margin: -3px 0 0 -3px
+  
+
 .content
   padding: 30px 0
   #collumn-left
     .list-group-item-heading
-      padding: 10px 0 10px 7px
+      padding: 10px 0 10px 0
       a
         font-family: "opensansbold", sans-serif
         font-size: 18px
@@ -151,7 +222,6 @@ header
       li
         margin: 0
         padding: 2px 0
-        padding-left: 10px
         border-right: 2px solid transparent
         &:hover
           border-right: 2px solid $main-color
@@ -203,21 +273,23 @@ header
               font-size: 12px
 section.callback
   background-color: $main-color
-  padding: 20px 0 30px 0
+  padding: 20px 0 0 0
   #callback
     position: relative
     h3
+      padding-left: 15px
       text-transform: uppercase
       font-size: 18px
       font-family: "opensansbolde",sans-serif
       color: #fff
     h5
+      padding-left: 15px
       font-family: "opensanssemibold", sans-serif
       font-size: 14px
       color: #fff
     .form-callback-big
       form
-        padding-top: 15px
+        margin: 15px 0 30px 0
         input
           background-color: transparent
           width: 21%
@@ -247,4 +319,183 @@ section.callback
     #img
       position: absolute
       right: 0
-      bottom: -30px
+      bottom: 0px
+
+#shares-hits-novelty
+  margin: 50px 0 50px 0
+  .col-sm-12.brd
+    padding: 0
+    margin: 0
+    &:after
+      width: 97%
+      content: ""
+      border: 1px solid $main-color
+      bottom: 0
+      left: 20px
+      position: absolute
+    .col-sm-2
+      text-align: center
+      h4
+        text-transform: uppercase
+        font-size: 18px
+        color: $main-color
+        border-bottom: 1px solid transparent
+        &:hover
+          cursor: pointer
+          color: $hover-color
+          &:after
+            z-index: 2
+            text-align: center
+            content: ""
+            border: $hover-color solid 1px
+            width: 160px
+            left: 20px
+            right: -20px
+            bottom: 0
+            position: absolute
+  .slick-bot
+    margin-top: 30px
+    .slick-items
+      outline: none
+      position: relative
+      margin: 0 14px
+      height: 380px
+      width: 264px
+      text-align: center
+      border: 1px solid #cccccc
+      .sticker-shares
+        display: none
+        margin-top: 10px
+        top: 0
+        text-transform: uppercase
+        position: absolute
+        right: 0
+        background-color: #fc855a
+        color: #fff
+        padding: 3px 15px 3px 20px
+        font-family: "opensansregular",sans-serif
+        font-size: 16px
+        border-radius: 20px 0 0 20px
+      .sticker-hits
+        display: none
+        margin-top: 10px
+        margin-right: 10px
+        top: 0
+        text-transform: uppercase
+        position: absolute
+        right: 0
+        background-color: #fc855a
+        color: #fff
+        padding: 20px 14px 20px 14px
+        font-family: "opensansbold",sans-serif
+        font-size: 16px
+        border-radius: 50%
+        transform: rotate(-30deg)
+      .sticker-novelty
+        display: block
+        margin-top: 10px
+        top: 0
+        text-transform: uppercase
+        position: absolute
+        right: 0
+        background-color: #fc855a
+        color: #fff
+        padding: 3px 15px 3px 20px
+        font-family: "opensansregular",sans-serif
+        font-size: 16px
+        border-radius: 20px 0 0 20px
+      .img-slick
+        img
+          height: 250px
+          width: 250px
+      .desc-slick
+        h5
+          padding: 0 5px 15px 5px
+          font-family: "opensanssemibold", sans-serif
+          font-size: 14px
+          color: $hover-color
+        .count
+          left: 10px
+          bottom: 30px
+          position: absolute
+          display: inline-block
+          float: left
+          margin-left: 10px
+          p
+            font-size: 18px
+            font-family: "opensansbold",sans-serif
+            color: $hover-color
+            span
+              padding-left: 5px
+              font-size: 12px
+        a.btn-slick
+          position: absolute
+          bottom: 30px
+          right: -10px
+          button
+            border: none
+            padding: 5px 25px 5px 20px
+            display: inline-block
+            float: right
+            background-color: $main-color
+            color: #fff
+            font-size: 18px
+            transition: all .3s
+            &:hover
+              transition: all .3s
+              background-color: $hover-color
+            &:after
+              content: ""
+              position: absolute
+              top: 100%
+              right: 0
+              border-top: 10px solid $hover-color
+              border-left: 0px solid transparent
+              border-right: 10px solid transparent
+              margin-left: -10px
+    .slick-prev
+      left: -50px
+    .slick-next
+      right: -50px
+#articles-and-news
+  background-color: #e9f0f9
+  padding: 50px 0
+  h2
+    text-align: center
+    font-family: "opensansbold", sans-serif
+    font-size: 24px
+    color: $main-color
+#wellcome
+  .container
+    padding: 80px 0
+    h4
+      text-transform: uppercase
+      font-family: "opensanssemibold", sans-serif
+      color: $main-color
+      font-size: 18px
+    p
+      line-height: 1.5em
+      font-family: "opensansregular", sans-serif
+      color: #444444
+      font-size: 12px
+      a
+        font-family: "opensanssemibold", sans-serif
+        color: $main-color
+        text-decoration: underline
+    p.center
+      font-size: 14px
+footer
+  .up-footer
+    padding: 50px 0
+    background-color: $main-color
+    .col-sm-2.foo
+      padding: 0
+      ul
+        padding-left: 0
+        li
+          a
+            color: #fff
+            font-family: "opensansregular", sans-serif
+            font-size: 12px
+            &:hover
+              text-decoration: underline
