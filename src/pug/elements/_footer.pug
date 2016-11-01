@@ -2,18 +2,22 @@ footer
 	.up-footer
 		.container
 			.row
-				.col-sm-2.foo
-					ul.list-unstyled
-						- var list_footer = ["Домашняя медтехника", "Медецинское оборудование","Лабораторное оборудование", "Ветеринарное оборудование", "Средства реабилитации"];
-							for name in list_footer
-								li
-									a= name
-				.col-sm-2.foo
-					ul.list-unstyled
-						- var list_footer = ["Оплата", "Доставка","Контакты", "Новости и статьи"];
-							for name in list_footer
-								li
-									a= name
+				.col-sm-2
+					.foo-1
+						ul.list-unstyled
+							- var list_footer = ["Домашняя медтехника", "Медецинское оборудование","Лабораторное оборудование", "Ветеринарное оборудование", "Средства реабилитации"];
+								for name in list_footer
+									li
+										a= name
+				.col-sm-2
+					.foo-2
+						ul.list-unstyled
+							- var list_footer = ["Оплата", "Доставка","Контакты", "Новости и статьи"];
+								for name in list_footer
+									li
+										a= name
 				.col-sm-4
+					.img
+						img(src="../img/LOGO1.png")
 				.col-sm-2
 				.col-sm-2
