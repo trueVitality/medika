@@ -41,28 +41,39 @@ header
 									li= name
 				div.col-sm-1
 					div#callback-form.pull-right
-						a
+						a.phone-icons
 							+img('icons/callback.svg')
+						.popup-form
+							a.phone-icon
+								+img('icons/callback.svg')
+							a.close_icon
+								+img('icons/close.svg')
+							h4 ЗАКАЗАТЬ ЗВОНОК
+							form
+								input(placeholder='Ваше имя')
+								input(placeholder='Контактный номер')
+								button ПЕРЕЗВОНИТЬ
 				div.col-sm-5
 					div#search.pull-right
-						a
+						input.hvr-underline-from-right(placeholder="Что вы ищете?")
+						a.search-icons
 							+img('icons/search.svg')
 				div.col-sm-1
 					div#bascket
 						a
 							+img('icons/bascket_item.svg')
 	nav#menu
-		div.container-fluid
-			div.container
-				div.row
-					div.collapse.navbar-collapse.navbar-ex1-collapse
-						ul.nav.navbar-nav
-							li.dropdown
-								a.drop-links
-									|	Медицинское
-									br
-									|	оборудование
-								div#content_drop.container
+		div.container
+			div.row
+				div.collapse.navbar-collapse.navbar-ex1-collapse
+					ul.nav.navbar-nav
+						li.dropdown
+							a.drop-links
+								|	Медицинское
+								br
+								|	оборудование
+							div#content_drop.container-fluid
+								.container
 									div.col-sm-3
 										div.items
 											div.thead
@@ -139,34 +150,34 @@ header
 													for name in items
 														li
 															a= name
-							li.dropdown
-								a.drop-links
-									|	Инструмент, лотки,
-									br
-									|	иглы хирургические
-								div#content_drop.container
-							li.dropdown
-								a.drop-links
-									| Лабораторное
-									br
-									| оборудование
-								div#content_drop.container
-							li.dropdown
-								a.drop-links
-									| Ветеринарное оборудование
-									br
-									| и инструмент
-								div#content_drop.container
-							li.dropdown
-								a.drop-links
-									| Весы, ростомеры,
-									br
-									| динамометры секундомеры
-								div#content_drop.container
-							li.dropdown
-								a.drop-links
-									| Запасные части
-									br
-									| и сервис
-								div#content_drop.container
+						li.dropdown
+							a.drop-links
+								|	Инструмент, лотки,
+								br
+								|	иглы хирургические
+							div#content_drop.container
+						li.dropdown
+							a.drop-links
+								| Лабораторное
+								br
+								| оборудование
+							div#content_drop.container
+						li.dropdown
+							a.drop-links
+								| Ветеринарное оборудование
+								br
+								| и инструмент
+							div#content_drop.container
+						li.dropdown
+							a.drop-links
+								| Весы, ростомеры,
+								br
+								| динамометры секундомеры
+							div#content_drop.container
+						li.dropdown
+							a.drop-links
+								| Запасные части
+								br
+								| и сервис
+							div#content_drop.container
 

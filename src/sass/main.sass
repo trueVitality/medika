@@ -15,6 +15,17 @@ a
 input, textarea, button
     outline: none
 
+//кнопка вверх
+#up-button
+  bottom: 100px
+  cursor: pointer
+  display: none
+  position: fixed
+  right: 40px
+  img
+    width: 40px
+    height: 40px
+
 header
   font-family: "opensansregular", sans-serif
   font-size: em(14px)
@@ -64,9 +75,81 @@ header
         img
           height: 35px
           width: 35px
+        .popup-form
+          display: none
+          padding-bottom: 25px
+          top: 0
+          width: 350px
+          background-color: rgba(255,255,255, .8)
+          z-index: 2
+          position: absolute
+          img
+            position: absolute
+          a.close_icon
+            position: absolute
+            right: 20px
+            img
+              width: 20px
+              height: 20px
+          h4
+            margin: 30px 0
+            text-align: center
+            font-family: "opensansbold", sans-serif
+            font-size: 18px
+            color: $main-color
+          form
+            text-align: center
+            input
+              width: 250px
+              background-color: transparent
+              border: none
+              border-bottom: 2px solid $main-color
+              margin-top: 5px
+              margin-bottom: 5px
+              width: 250px
+              &:focus
+                border: none
+                border-bottom: 2px solid $main-color
+              @include placeholder
+                color: #444
+                font-family: "opensanslightitalic", sans-serif
+                text-indent: 10px
+            button
+              margin-top: 30px
+              display: inline-block
+              font-family: "opensanssemibold", sans-serif
+              font-size: 18px
+              padding: 6px 25px
+              color: #fff
+              background-color: $main-color
+              transition: all .3s
+              border: none
+              &:hover
+                background-color: #fff
+                transition: all .3s
+                background-color: $hover-color
     div.col-sm-5
       margin-top: 20px
       #search
+        input
+          width: 230px
+          padding: 5px 0px 5px 15px
+          border: none
+          transition: 0.3s ease-in-out
+          border-bottom: 2px solid transparent
+          @include placeholder
+            color: $main-color
+            font-family: "opensanslightitalic", sans-serif
+            font-size: 14px
+            text-indent: 105px
+            transition: text-indent 0.3s ease-in-out
+          &:focus
+            //transition: 0.3s ease-in-out
+            //border-bottom: 2px solid $main-color
+            @include placeholder
+              text-indent: 5px
+              transition: text-indent 0.3s ease-in-out
+
         img
           height: 35px
           width: 35px
@@ -77,75 +160,79 @@ header
         img
           width: 35px
   nav#menu
-    .container-fluid
-      background-color: $main-color
-      .collapse
-        padding-right: 0
-        padding-left: 0
-        .nav.navbar-nav
-          width: 100%
-          li.dropdown
-            text-align: center
-            width: 16.6666667%
+    background-color: $main-color
+    position: relative
+    .collapse
+      position: static
+      padding-right: 0
+      padding-left: 0
+      .nav.navbar-nav
+        position: static
+        width: 100%
+        li.dropdown
+          position: static
+          text-align: center
+          width: 16.6666667%
+          a
+            font-family: "ProximaNovaCondensedRegular", sans-serif
+            font-size: em(18px)
+            padding: 15px 0
+            color: #fff
+          &:hover
             a
-              font-family: "ProximaNovaCondensedRegular", sans-serif
-              font-size: em(18px)
-              padding: 15px 0
-              color: #fff
-            &:hover
-              a
-                color: #3385d5
-                background-color: transparent
-              .drop-links:after
-                z-index: 2
-                content: ""
-                position: absolute
-                top: 100%
-                left: 50%
-                border-top: 8px solid $main-color
-                border-left: 8px solid transparent
-                border-right: 8px solid transparent
-                margin-left: -8px
-              #content_drop
-                display: block
-                z-index: 1
-            #content_drop
-              display: none
-              background-color: #fff
-              &:after
-                content: ""
-                border: $main-color solid 1px
-                width: 170%
-                bottom: 0
-                left: -400px
-                position: absolute
+              color: #3385d5
+              background-color: transparent
+            .drop-links:after
+              z-index: 2
+              content: ""
               position: absolute
-              text-align: left
-              padding: 0
-              .items
-                margin: 20px 0 20px 10px
-                .thead
-                  padding: 0 0 5px 0
+              top: 100%
+              left: 50%
+              border-top: 8px solid $main-color
+              border-left: 8px solid transparent
+              border-right: 8px solid transparent
+              margin-left: -8px
+            #content_drop
+              display: block
+              z-index: 1
+          #content_drop
+            left: 0
+            display: none
+            background-color: #fff
+            &:after
+              content: ""
+              border: $main-color solid 1px
+              width: 100%
+              bottom: 0
+              position: absolute
+            position: absolute
+            text-align: left
+            padding: 0
+            .items
+              margin: 20px 0 20px 10px
+              .thead
+                padding: 0 0 5px 0
+                a
+                  font-family: "opensansbold", sans-serif
+                  font-size: 12px
+                  color: $hover-color
+                  &:hover
+                    text-decoration: underline
+              ul
+                li
                   a
-                    font-family: "opensansbold", sans-serif
+                    color: #2c2c2c
+                    font-family: "opensansregular", sans-serif
                     font-size: 12px
-                    color: $hover-color
                     &:hover
                       text-decoration: underline
-                ul
-                  li
-                    a
-                      color: #2c2c2c
-                      font-family: "opensansregular", sans-serif
-                      font-size: 12px
-                      &:hover
-                        text-decoration: underline
 
 #slideshow
   background: linear-gradient(to bottom, #fff, #b1d3f4)
   .slick-top
     text-align: center
     z-index: 0
+    margin-bottom: 0
     .slick-item
       outline: none
       z-index: 0
@@ -169,14 +256,14 @@ header
 
 .slick-prev
   z-index: 1
-  left: 25px
+  left: -50px
   width: 40px
   height: 40px
 .slick-prev::before
   content: url(../img/icons/arrow_left.svg)
   color: $main-color
 .slick-next
-  right: 25px
+  right: -50px
   width: 40px
   height: 40px
 .slick-next:before
@@ -186,7 +273,7 @@ header
   margin: 0
 .slick-dots
   position: absolute
-  bottom: 0
+  bottom: 0px
 .slick-dots li button
   width: 12px
   height: 12px
@@ -496,13 +583,14 @@ section.callback
       font-size: 12px
       a
         font-family: "opensanssemibold", sans-serif
-        color: $main-color
+        color: $hover-color
         text-decoration: underline
+        font-size: 12px
     p.center
       font-size: 14px
 footer
   .up-footer
-    padding: 50px 0
+    padding-bottom: 20px
     background-color: $main-color
     .col-sm-2
       padding: 0
@@ -521,7 +609,7 @@ footer
       .foo-2
         ul
           text-align: left
-          padding-left: 0
+          padding-left: 40px
           li
             a
               color: #fff
@@ -531,6 +619,43 @@ footer
                 text-decoration: underline
     .col-sm-4
       .img
+        margin-top: 30px
         text-align: center
         img
-          width: 50%
+          width: 46%
+    .col-sm-2
+      .foo-3
+        text-align: center
+    .col-sm-2
+      .foo-4
+        padding-left: 20px
+
+.foo-1,.foo-2, .foo-3, .foo-4
+  margin-top: 50px
+  li
+    color: #fff
+    font-family: "opensansregular", sans-serif
+    font-size: 12px
+    line-height: 1.8em
+    a
+
+      color: #fff
+      font-family: "opensansregular", sans-serif
+      font-size: 12px
+      &:hover
+        text-decoration: underline
+
+.down-footer
+  background-color: $hover-color
+  text-align: center
+  p
+    margin: 20px 0 20px 0
+    color: #fff
+    font-family: "opensansregular", sans-serif
+    font-size: 12px
+    a
+      color: #FFF
+      &:hover
+        text-decoration: underline
+
+@import "helpers/media"

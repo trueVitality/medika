@@ -20,4 +20,26 @@ footer
 					.img
 						img(src="../img/LOGO1.png")
 				.col-sm-2
+					.foo-3
+						ul.list-inline
+							- var language = ["УКР","РУ","ENG"];
+								for name in language
+									li
+										a= name
+						ul.list-inline
+							- var currency = ["€","$","ГРН","РУБ"];
+								for name in currency
+									li
+										a= name
 				.col-sm-2
+					.foo-4
+						ul.list-unstyled
+							- var phones = ["(098) 462-99-66", "(050) 352-76-20", "(063) 237-62-23", "medica@voliacable.com"];
+								for name in phones
+									li= name
+	.down-footer
+		.container
+			p © MEDIKA  1993-2016 &nbsp; &nbsp; &nbsp;I&nbsp; &nbsp; &nbsp; Разработка и провижение сайта студия&nbsp;
+				a RECLAMARE
+	#up-button
+		img(src='../img/icons/arrow_up.svg')
