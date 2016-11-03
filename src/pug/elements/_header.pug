@@ -55,16 +55,19 @@ header
 								button ПЕРЕЗВОНИТЬ
 				div.col-sm-5
 					div#search.pull-right
-						//span.input.input--hoshi
-						//	input.input__field.input__field--hoshi#input-4
-						//	label.input__label.input__label--hoshi.input__label--hoshi-color-1(for="input-4")
-						//		span.input__label-content.input__label-content--hoshi Что вы ищете?
-						a.search-icons
+						span.input.input--hoshi
+							input.input__field.input__field--hoshi#input-4(placeholder='Что вы ищете?')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for="input-4")
+								span.input__label-content.input__label-content--hoshi
+						a.search-icons.pull-right
 							+img('icons/search.svg')
 				div.col-sm-1
 					div#bascket
-						a
-							+img('icons/bascket_item.svg')
+						a.empty
+							img#empty_img(src='../img/icons/bascket_empty.svg')
+						a.full
+							img#full_img(src='../img/icons/bascket_item.svg')
+							span.number 1
 	nav#menu
 		div.container
 			div.row

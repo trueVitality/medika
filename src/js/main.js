@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+  //hover
+  $('#empty_img').hover(function() {
+    $("#empty_img").attr('src', '../img/icons/bascket_empty_hover.svg');
+  }, function() {
+    $("#empty_img").attr('src', '../img/icons/bascket_empty.svg');
+  });
+  $('#full_img').hover(function() {
+    $("#full_img").attr('src', '../img/icons/bascket_item_hover.svg');
+  }, function() {
+    $("#full_img").attr('src', '../img/icons/bascket_item.svg');
+  });
+
   //Форма Заказать звонок
   $(".phone-icons").click(function(event) {
     event.preventDefault();
