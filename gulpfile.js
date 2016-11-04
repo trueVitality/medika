@@ -16,7 +16,7 @@ var path = {
 	build: {
 	js: 'build/js',
 	css: 'build/css',
-	img: 'build/img',
+	img: 'build/img/',
 	html: 'build/',
 	fonts: 'build/fonts/'
 	},
@@ -25,7 +25,7 @@ var path = {
 	sass: 'src/sass/**/*.sass',
 	css: 'src/css',
 	main: 'src/css/*',
-	img: 'src/img/*',
+	img: 'src/img/**/*',
 	html: 'src/html/*.html',
 	pug: 'src/pug/**/*.pug',
 	pugDest: 'src/html/',

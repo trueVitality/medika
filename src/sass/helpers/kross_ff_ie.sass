@@ -1,0 +1,57 @@
+@import "bourbon"
+@import "vars"
+
+@-moz-document url-prefix()
+  header
+    nav#top
+      div.col-lg-2.b
+        #currency
+          ul.list-inline
+            li
+              a
+                &:after
+                  top: 4px
+                  height: 11px
+      div.col-lg-2.b
+        #language
+          ul.list-inline
+            li
+              a
+                &:after
+                  top: 4px
+                  width: 1px
+                  height: 11px
+  footer
+    .foo-3
+      ul.list-inline
+        position: relative
+        li
+          position: relative
+          margin-right: 5px
+          a
+            &:after
+              top: 5px
+              width: 1px
+              height: 12px
+          &:last-child
+            a
+              &:after
+                border: none
+        &:last-child
+          position: relative
+          li
+            position: relative
+            margin-right: 5px
+            a
+              &:after
+                top: 6px
+                width: 1px
+                height: 12px
+            &:last-child
+              a
+                &:after
+                  border: none
+
+@supports (-ms-ime-align: auto)
+  header nav#top div.col-lg-1.b
+    margin-top: 19px

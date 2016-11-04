@@ -4,42 +4,42 @@ header
 	nav#top
 		div.container
 			div.row
-				div.col-sm-2
+				div.col-lg-2.col-md-1
 					div.logo
 						+img('LOGO.png')
-				div.col-sm-5.b
+				div.col-lg-5.b.col-md-5
 					div#top-links.nav.pull-left
 						ul.list-inline
 							- var links = ["Оплата", "Доставка", "Контакты", "Новости и статьи"];
 								for name in links
 									li
 										a= name
-				div.col-sm-2.b
+				div.col-lg-2.b.col-md-2
 					div#currency.pull-right
 						ul.list-inline
 							- var currency = ["€","$","ГРН","РУБ"];
 								for name in currency
 									li
 										a= name
-				div.col-sm-2.b
+				div.col-lg-2.b.col-md-2
 					div#language.pull-left
 						ul.list-inline
 							- var language = ["УКР","РУ","ENG"];
 								for name in language
 									li
 										a= name
-				div.col-sm-1.b
+				div.col-lg-1.b.col-md-2
 					div#login
 						a.icon
 							+img('icons/user.svg')
 						a.text Войти
-				div.col-sm-3
+				div.col-lg-3.col-md-4
 					div#phones
 						ul.list-inline
 							- var phones = ["(098) 462-99-66", "(050) 352-76-20", "(063) 237-62-23", "medica@voliacable.com"];
 								for name in phones
 									li= name
-				div.col-sm-1
+				div.col-lg-1.col-md-1
 					div#callback-form.pull-right
 						a.phone-icons
 							+img('icons/callback.svg')
@@ -53,7 +53,7 @@ header
 								input(placeholder='Ваше имя')
 								input(placeholder='Контактный номер')
 								button ПЕРЕЗВОНИТЬ
-				div.col-sm-5
+				div.col-lg-5.col-md-5
 					div#search.pull-right
 						span.input.input--hoshi
 							input.input__field.input__field--hoshi#input-4(placeholder='Что вы ищете?')
@@ -61,12 +61,12 @@ header
 								span.input__label-content.input__label-content--hoshi
 						a.search-icons.pull-right
 							+img('icons/search.svg')
-				div.col-sm-1
+				div.col-lg-1.col-md-1
 					div#bascket
 						a.empty
-							img#empty_img(src='../img/icons/bascket_empty.svg')
+							+img('icons/bascket_empty.svg')#empty_img
 						a.full
-							img#full_img(src='../img/icons/bascket_item.svg')
+							+img('icons/bascket_item.svg')#full_img
 							span.number 1
 	nav#menu
 		div.container
@@ -80,7 +80,7 @@ header
 								|	оборудование
 							div#content_drop.container-fluid
 								.container
-									div.col-sm-3
+									div.col-lg-3.col-md-3
 										div.items
 											div.thead
 												a ТОНОМЕТРЫ
@@ -97,7 +97,7 @@ header
 													for name in items
 														li
 															a= name
-									div.col-sm-3
+									div.col-lg-3.col-md-3
 										div.items
 											div.thead
 												a ВИТАФОН
@@ -122,7 +122,7 @@ header
 													for name in items
 														li
 															a= name
-									div.col-sm-3
+									div.col-lg-3.col-md-3
 										div.items
 											div.thead
 												a УХОД ЗА ПОЛОСТЬЮ РТА
@@ -139,7 +139,7 @@ header
 																	for name in items
 																		li
 																			a= name
-									div.col-sm-3
+									div.col-lg-3.col-md-3
 										div.items
 											div.thead
 												a ТОНОМЕТРЫ
@@ -186,4 +186,3 @@ header
 								br
 								| и сервис
 							div#content_drop.container
-

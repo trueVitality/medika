@@ -1,7 +1,8 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
+1 verbose cli   'run-script',
+1 verbose cli   'build' ]
 2 info using npm@2.15.9
 3 info using node@v4.6.0
 4 verbose stack Error: Failed to parse json
@@ -15,7 +16,7 @@
 4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
 5 verbose cwd E:\projects\medika_pro
 6 error Windows_NT 10.0.10240
-7 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+7 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run-script" "build"
 8 error node v4.6.0
 9 error npm  v2.15.9
 10 error file E:\projects\medika_pro\package.json

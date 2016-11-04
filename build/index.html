@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Medika</title>
+  </head>
+  <body>
+    <header>
+      <nav id="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-1">
+              <div class="logo"><img src="img/LOGO.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-5 b col-md-5">
+              <div class="nav pull-left" id="top-links">
+                <ul class="list-inline">
+                  <li><a>Оплата</a></li>
+                  <li><a>Доставка</a></li>
+                  <li><a>Контакты</a></li>
+                  <li><a>Новости и статьи</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 b col-md-2">
+              <div class="pull-right" id="currency">
+                <ul class="list-inline">
+                  <li><a>€</a></li>
+                  <li><a>$</a></li>
+                  <li><a>ГРН</a></li>
+                  <li><a>РУБ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 b col-md-2">
+              <div class="pull-left" id="language">
+                <ul class="list-inline">
+                  <li><a>УКР</a></li>
+                  <li><a>РУ</a></li>
+                  <li><a>ENG</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-1 b col-md-2">
+              <div id="login"><a class="icon"><img src="img/icons/user.svg" alt=""></a><a class="text">Войти</a></div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div id="phones">
+                <ul class="list-inline">
+                  <li>(098) 462-99-66</li>
+                  <li>(050) 352-76-20</li>
+                  <li>(063) 237-62-23</li>
+                  <li>medica@voliacable.com</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-1">
+              <div class="pull-right" id="callback-form"><a class="phone-icons"><img src="img/icons/callback.svg" alt=""></a>
+                <div class="popup-form"><a class="phone-icon"><img src="img/icons/callback.svg" alt=""></a><a class="close_icon"><img src="img/icons/close.svg" alt=""></a>
+                  <h4>ЗАКАЗАТЬ ЗВОНОК</h4>
+                  <form>
+                    <input placeholder="Ваше имя">
+                    <input placeholder="Контактный номер">
+                    <button>ПЕРЕЗВОНИТЬ</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+              <div class="pull-right" id="search"><span class="input input--hoshi">
+                  <input class="input__field input__field--hoshi" id="input-4" placeholder="Что вы ищете?">
+                  <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4"><span class="input__label-content input__label-content--hoshi"></span></label></span><a class="search-icons pull-right"><img src="img/icons/search.svg" alt=""></a></div>
+            </div>
+            <div class="col-lg-1 col-md-1">
+              <div id="bascket"><a class="empty"><img src="img/icons/bascket_empty.svg" alt="" id="empty_img"></a><a class="full"><img src="img/icons/bascket_item.svg" alt="" id="full_img"><span class="number">1</span></a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav id="menu">
+        <div class="container">
+          <div class="row">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="drop-links">	Медицинское<br>	оборудование</a>
+                  <div class="container-fluid" id="content_drop">
+                    <div class="container">
+                      <div class="col-lg-3 col-md-3">
+                        <div class="items">
+                          <div class="thead"><a>ТОНОМЕТРЫ</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Автоматические тонометры</a></li>
+                            <li><a>Полуавтоматические тонометры</a></li>
+                            <li><a>Тонометры на запястье</a></li>
+                            <li><a>Механические тонометры</a></li>
+                            <li><a>Аксессуары к тонометрам</a></li>
+                          </ul>
+                        </div>
+                        <div class="items">
+                          <div class="thead"><a>ИНГАЛЯТОРЫ (НЕБУЛАЙЗЕРЫ)</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Ингаляторы (небулайзеры) компрессорные</a></li>
+                            <li><a>Ингаляторы (небулайзеры) ультразвуковые, МЕШ</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <div class="items">
+                          <div class="thead"><a>ВИТАФОН</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Витафон</a></li>
+                          </ul>
+                        </div>
+                        <div class="items">
+                          <div class="thead"><a>ПУЛЬСОМЕТРЫ</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Пульсометры</a></li>
+                            <li><a>ШАГОМЕРЫ</a></li>
+                            <li><a>Шагомеры</a></li>
+                          </ul>
+                        </div>
+                        <div class="items">
+                          <div class="thead"><a>ИРРИГАТОРЫ И АСЕССУАРЫ</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Ирригаторы</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <div class="items">
+                          <div class="thead"><a>УХОД ЗА ПОЛОСТЬЮ РТА</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Зубные щетки</a></li>
+                            <li><a>Зубные пасты, гели</a></li>
+                            <li><a>Ополаскиватели для рта, спреи</a></li>
+                            <li><a>Зубные нити, флоссы, ершики, каппы</a></li>
+                            <li><a>Средства для протезов, имплантов</a></li>
+                          </ul>
+                        </div>
+                        <div class="items">
+                          <div class="thead"><a>СЛУХОВЫЕ АППАРАТЫ</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Слуховые аппараты</a></li>
+                            <li><a>Дарсонваль</a></li>
+                            <li><a>Насадки (электроды) на дарсонваль</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <div class="items">
+                          <div class="thead"><a>ТОНОМЕТРЫ</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Автоматические тонометры</a></li>
+                            <li><a>Полуавтоматические тонометры</a></li>
+                            <li><a>Тонометры на запястье</a></li>
+                            <li><a>Механические тонометры</a></li>
+                            <li><a>Аксессуары к тонометрам</a></li>
+                          </ul>
+                        </div>
+                        <div class="items">
+                          <div class="thead"><a>ИНГАЛЯТОРЫ (НЕБУЛАЙЗЕРЫ)</a></div>
+                          <ul class="list-unstyled">
+                            <li><a>Ингаляторы (небулайзеры) компрессорные</a></li>
+                            <li><a>Ингаляторы (небулайзеры) ультразвуковые, МЕШ</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="dropdown"><a class="drop-links">	Инструмент, лотки,<br>	иглы хирургические</a>
+                  <div class="container" id="content_drop"></div>
+                </li>
+                <li class="dropdown"><a class="drop-links">Лабораторное<br>оборудование</a>
+                  <div class="container" id="content_drop"></div>
+                </li>
+                <li class="dropdown"><a class="drop-links">Ветеринарное оборудование<br>и инструмент</a>
+                  <div class="container" id="content_drop"></div>
+                </li>
+                <li class="dropdown"><a class="drop-links">Весы, ростомеры,<br>динамометры секундомеры</a>
+                  <div class="container" id="content_drop"></div>
+                </li>
+                <li class="dropdown"><a class="drop-links">Запасные части<br>и сервис</a>
+                  <div class="container" id="content_drop"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
+<div id="slideshow">
+  <div class="container">
+    <div class="row">
+      <div class="slick-top">
+        <div class="slick-item">
+          <div class="container">
+            <h1>Кислородные концентраторы</h1>
+            <h3>по самым низким ценам!</h3><img src="img/duichik.png" alt="">
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="container">
+            <h1>Шприц навесной</h1>
+            <h3>не упусти момент!</h3><img src="img/duichik.png" alt="">
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="container">
+            <h1>Подушка высыпалка</h1>
+            <h3>ночью спать дешево!</h3><img src="img/duichik.png" alt="">
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="container">
+            <h1>Адреналин на развес</h1>
+            <h3>цена как адреналин!</h3><img src="img/duichik.png" alt="">
+          </div>
+        </div>
+        <div class="slick-item">
+          <div class="container">
+            <h1>Индикатор боли</h1>
+            <h3>самая изкая цена!</h3><img src="img/duichik.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div id="collumn-left">
+        <div class="col-lg-3 col-md-3">
+          <div class="list-group-item-heading"><a class="item-head">Тематические разделы</a></div>
+          <ul class="list-unstyled list-group">
+            <li><a class="list-item">Ингаляторы (небулайзеры)</a></li>
+            <li><a class="list-item">Устройства для обеспечения проходимости дыхательных путей</a></li>
+            <li><a class="list-item">Оборудование для кислородной терапии</a></li>
+            <li><a class="list-item">Аппараты дыхательные</a></li>
+            <li><a class="list-item">Медицинская мебель</a></li>
+            <li><a class="list-item">Светильники и отсасыватели хирургические, медицинские</a></li>
+            <li><a class="list-item">Предметы ухода за больными</a></li>
+            <li><a class="list-item">Весы для взвешивания людей, динамометры,  секундомеры</a></li>
+            <li><a class="list-item">Иглы хирургические</a></li>
+            <li><a class="list-item">Инструмент для косметологических и парикмахерских салонов</a></li>
+            <li><a class="list-item">Хирургический инструмент, шприцы, иглы иньекционные</a></li>
+            <li><a class="list-item">Лампы и облучатели бактерицидные</a></li>
+            <li><a class="list-item">Лотки</a></li>
+            <li><a class="list-item">Оборудование для иммобилизации</a></li>
+            <li><a class="list-item">Разное оборудование</a></li>
+            <li><a class="list-item">Физиотерапия</a></li>
+            <li><a class="list-item">Ветеринария</a></li>
+            <li><a class="list-item">Кипятильники , биксы , стерилизаторы</a></li>
+            <li><a class="list-item">Лабораторное оборудование</a></li>
+            <li><a class="list-item">Запасные части</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <div class="col-lg-8 col-lg-offset-1 col-md-9" id="advantages">
+          <div class="col-lg-3 col-md-3 desc-item"><img src="img/icons/features/time1.svg" alt="">
+            <div class="desc">
+              <p>Более 20 лет на украинском рынке</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 desc-item"><img src="img/icons/features/delivery.svg" alt="">
+            <div class="desc">
+              <p>Быстрая доставка по всей Украине</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 desc-item"><img src="img/icons/features/money.svg" alt="">
+            <div class="desc">
+              <p>Лучшие цены, акции и скидки</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 desc-item"><img src="img/icons/features/guarantee.svg" alt="">
+            <div class="desc">
+              <p>Гарании качеста</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-1 col-md-9" id="popular-categories">
+          <div class="popular-head">
+            <h3>Популярные категории</h3>
+          </div>
+          <div class="col-lg-3 col-md-3 desc-item"><a><img src="img/1.jpg" alt="">
+              <div class="desc">
+                <p>Тонометры</p>
+              </div></a></div>
+          <div class="col-lg-3 col-md-3 desc-item"><a><img src="img/2.jpg" alt="">
+              <div class="desc">
+                <p>Небулайзеры (Ингаляторы)</p>
+              </div></a></div>
+          <div class="col-lg-3 col-md-3 desc-item"><a><img src="img/3.jpg" alt="">
+              <div class="desc">
+                <p>Весы</p>
+              </div></a></div>
+          <div class="col-lg-3 col-md-3 desc-item"><a><img src="img/4.jpg" alt="">
+              <div class="desc">
+                <p>Ирригаторы и аксессуары</p>
+              </div></a></div>
+          <div class="col-lg-3 col-md-3 desc-item"><a><img src="img/5.jpg" alt="">
+              <div class="desc">
+                <p>Бандажи и корсеты</p>
+              </div></a></div>
+          <div class="col-lg-3 col-md-3 desc-item"><a><img src="img/6.jpg" alt="">
+              <div class="desc">
+                <p>Глюкометры и расходные материалы</p>
+              </div></a></div>
+          <div class="col-lg-3 col-md-3 desc-item"><a><img src="img/7.jpg" alt="">
+              <div class="desc">
+                <p>Массажеры для ног и тела</p>
+              </div></a></div>
+          <div class="col-lg-3 col-md-3 desc-item"><a><img src="img/8.jpg" alt="">
+              <div class="desc">
+                <p>Очистители воздуха</p>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="callback">
+  <div id="callback">
+    <div class="container">
+      <div class="row">
+        <h3>Трудности с выбором товара?</h3>
+        <h5>Закажите в один клик обратный звонок у нашего специалиста!</h5>
+        <div class="col-lg-8 form-callback-big">
+          <form>
+            <input placeholder="Ваше имя">
+            <input placeholder="Контактный номер">
+            <button>ПЕРЕЗВОНИТЬ</button>
+          </form>
+        </div>
+        <div class="col-lg-4 pull-right" id="img"><img src="img/callback.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div id="shares-hits-novelty">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 brd">
+          <div class="col-lg-2">
+            <h4>акции</h4>
+          </div>
+          <div class="col-lg-2">
+            <h4>новинки</h4>
+          </div>
+          <div class="col-lg-2">
+            <h4>хиты продаж</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="slick-bot">
+          <div class="slick-items">
+            <div class="sticker-shares">акция</div>
+            <div class="sticker-hits">хит</div>
+            <div class="sticker-novelty">новинка</div>
+            <div class="img-slick"><img src="img/products/img.png" alt="">
+            </div>
+            <div class="desc-slick">
+              <h5>Универсальный ирригатор полости рта WP-100E2</h5>
+              <div class="count">
+                <p>3050<span>грн</span></p>
+              </div><a class="btn-slick">
+                <button>КУПИТЬ</button></a>
+            </div>
+          </div>
+          <div class="slick-items">
+            <div class="sticker-shares">акция</div>
+            <div class="sticker-hits">хит</div>
+            <div class="sticker-novelty">новинка</div>
+            <div class="img-slick"><img src="img/products/img2.png" alt="">
+            </div>
+            <div class="desc-slick">
+              <h5>Увлажнитель воздуха Boneco 7135</h5>
+              <div class="count">
+                <p>3050<span>грн</span></p>
+              </div><a class="btn-slick">
+                <button>КУПИТЬ</button></a>
+            </div>
+          </div>
+          <div class="slick-items">
+            <div class="sticker-shares">акция</div>
+            <div class="sticker-hits">хит</div>
+            <div class="sticker-novelty">новинка</div>
+            <div class="img-slick"><img src="img/products/img3.png" alt="">
+            </div>
+            <div class="desc-slick">
+              <h5>Термометр LONGEVITA MT- 4320</h5>
+              <div class="count">
+                <p>3050<span>грн</span></p>
+              </div><a class="btn-slick">
+                <button>КУПИТЬ</button></a>
+            </div>
+          </div>
+          <div class="slick-items">
+            <div class="sticker-shares">акция</div>
+            <div class="sticker-hits">хит</div>
+            <div class="sticker-novelty">новинка</div>
+            <div class="img-slick"><img src="img/products/img4.png" alt="">
+            </div>
+            <div class="desc-slick">
+              <h5>Стетофонендоскоп педиатрический «MD One™ Stainless Steel Dual Head»</h5>
+              <div class="count">
+                <p>3050<span>грн</span></p>
+              </div><a class="btn-slick">
+                <button>КУПИТЬ</button></a>
+            </div>
+          </div>
+          <div class="slick-items">
+            <div class="img-slick"><img src="img/products/img.png" alt="">
+            </div>
+            <div class="desc-slick">
+              <h5>Универсальный ирригатор полости рта WP-100E2</h5>
+              <div class="count">
+                <p>3050<span>грн</span></p>
+              </div><a class="btn-slick">
+                <button>КУПИТЬ</button></a>
+            </div>
+          </div>
+          <div class="slick-items">
+            <div class="img-slick"><img src="img/products/img2.png" alt="">
+            </div>
+            <div class="desc-slick">
+              <h5>Увлажнитель воздуха Boneco 7135</h5>
+              <div class="count">
+                <p>3050<span>грн</span></p>
+              </div><a class="btn-slick">
+                <button>КУПИТЬ</button></a>
+            </div>
+          </div>
+          <div class="slick-items">
+            <div class="img-slick"><img src="img/products/img3.png" alt="">
+            </div>
+            <div class="desc-slick">
+              <h5>Термометр LONGEVITA MT- 4320</h5>
+              <div class="count">
+                <p>3050<span>грн</span></p>
+              </div><a class="btn-slick">
+                <button>КУПИТЬ</button></a>
+            </div>
+          </div>
+          <div class="slick-items">
+            <div class="img-slick"><img src="img/products/img4.png" alt="">
+            </div>
+            <div class="desc-slick">
+              <h5>Стетофонендоскоп педиатрический «MD One™ Stainless Steel Dual Head»</h5>
+              <div class="count">
+                <p>3050<span>грн</span></p>
+              </div><a class="btn-slick">
+                <button>КУПИТЬ</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div id="articles-and-news">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Новости и статьи</h2>
+        </div>
+        <div class="col-lg-4">
+          <div class="artic-news"><img src="img/news/1.jpg" alt="">
+            <div class="date"><span>6.10.2016</span></div>
+            <div class="desc-news">
+              <p>Новейшая Текар T-CaRe (Capacitive Resistive) технология</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="artic-news"><img src="img/news/2.jpg" alt="">
+            <div class="date"><span>16.10.2016</span></div>
+            <div class="desc-news">
+              <p>Новейшая Текар T-CaRe (Capacitive Resistive) технология</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="artic-news"><img src="img/news/3.jpg" alt="">
+            <div class="date"><span>26.10.2016</span></div>
+            <div class="desc-news">
+              <p>Новейшая Текар T-CaRe (Capacitive Resistive) технология</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div id="wellcome">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>ДОБРО ПОЖАЛОВАТЬ В Medika</h4>
+          <p>Здоровье - залог успеха в нашей жизни. При небольших признаках болезни или даже малейших проблемах со здоровьем, необходимо сделать качественную диагностику и выяснить первопричину или источник всех проблем, чтобы лечение прошло как можно быстрее и эффективнее. Для реализации всех диагностических процедур необходим высококачественный медицинский инструментарий, медтехника и оборудование. Сейчас медицинское оборудование купить в Украине несложно, но каждый покупатель стремится найти товар по выгодной цене и с хорошим качеством. Во многих случаях именно качество, цена, надежность и узнаваемость бренда влияет на окончательный выбор покупателя.</p>
+          <p class="center">Качественное медицинское оборудование от компании «Медика» Киев</p>
+          <p>Компания «Медика» - надёжный и проверенный поставщик качественного медицинского оборудования и медтехники на рынке Украины. Она уже более 20 лет успешно работает с различными больницами, клиниками, санаториями и другими медицинскими учреждениями. В магазине можно купить: лабораторное, хирургическое, кардиологическое, стоматологическое и офтальмологическое .... &nbsp;<a>Читать далее</a></p>
+        </div>
+        <div class="col-lg-6"><img src="img/news/4.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="up-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="foo-1">
+            <ul class="list-unstyled">
+              <li><a>Домашняя медтехника</a></li>
+              <li><a>Медецинское оборудование</a></li>
+              <li><a>Лабораторное оборудование</a></li>
+              <li><a>Ветеринарное оборудование</a></li>
+              <li><a>Средства реабилитации</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="foo-2">
+            <ul class="list-unstyled">
+              <li><a>Оплата</a></li>
+              <li><a>Доставка</a></li>
+              <li><a>Контакты</a></li>
+              <li><a>Новости и статьи</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 img_footer">
+          <div class="img"><img src="img/LOGO1.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="foo-3">
+            <ul class="list-inline">
+              <li><a>УКР</a></li>
+              <li><a>РУ</a></li>
+              <li><a>ENG</a></li>
+            </ul>
+            <ul class="list-inline">
+              <li><a>€</a></li>
+              <li><a>$</a></li>
+              <li><a>ГРН</a></li>
+              <li><a>РУБ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="foo-4">
+            <ul class="list-unstyled">
+              <li>(098) 462-99-66</li>
+              <li>(050) 352-76-20</li>
+              <li>(063) 237-62-23</li>
+              <li>medica@voliacable.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="down-footer">
+    <div class="container">
+      <p>© MEDIKA  1993-2016 &nbsp; &nbsp; &nbsp;I&nbsp; &nbsp; &nbsp; Разработка и провижение сайта студия&nbsp;<a>RECLAMARE</a></p>
+    </div>
+  </div>
+  <div id="up-button"><img src="img/icons/arrow_up.svg" alt="">
+  </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>

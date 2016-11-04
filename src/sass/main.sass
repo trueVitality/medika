@@ -31,31 +31,66 @@ header
   font-size: em(14px)
   nav#top
     padding-bottom: 10px
-    div.col-sm-2
+    div.col-lg-2
       border-bottom: none
       .logo
         margin-top: 10px
         text-align: center
         img
           width: 65%
-    div.col-sm-5.b
+    div.col-lg-5.b
       border-bottom: 1px solid $main-color
       margin-top: 20px
       #top-links
         li
           padding-right: 30px
-    div.col-sm-2.b
+    div.col-lg-2.b
       border-bottom: 1px solid $main-color
       margin-top: 20px
       #currency
         ul.list-inline
           li
-
-    div.col-sm-2.b
+            margin-right: 5px
+            a
+              &:after
+                margin-left: 8px
+                content: ''
+                border-top: 1px solid transparent
+                border-right: 1px solid transparent
+                border-bottom: 1px solid transparent
+                border-left: 1px solid #444444
+                position: absolute
+                top: 4px
+                width: 1px
+                height: 10px
+            &:last-child
+              a
+                &:after
+                  border: none
+    div.col-lg-2.b
       border-bottom: 1px solid $main-color
       margin-top: 20px
       #language
-    div.col-sm-1.b
+        ul.list-inline
+          li
+            margin-right: 5px
+            a
+              &:after
+                margin-left: 8px
+                content: ''
+                border-top: 1px solid transparent
+                border-right: 1px solid transparent
+                border-bottom: 1px solid transparent
+                border-left: 1px solid #444444
+                position: absolute
+                top: 4px
+                width: 1px
+                height: 10px
+            &:last-child
+              a
+                &:after
+                  border: none
+    div.col-lg-1.b
       border-bottom: 1px solid $main-color
       margin-top: 20px
       padding-bottom: 9px
@@ -65,12 +100,12 @@ header
           img
             width: 17px
             height: 17px
-    div.col-sm-3
+    div.col-lg-3
       padding-right: 0px
       margin-top: 20px
       li
         padding-right: 20px
-    div.col-sm-1
+    div.col-lg-1
       margin-top: 20px
       #callback-form
         img
@@ -129,7 +164,7 @@ header
                 background-color: #fff
                 transition: all .3s
                 background-color: $hover-color
-    div.col-sm-5
+    div.col-lg-5
       #search
         margin-top: 10px
         width: 100%
@@ -139,7 +174,7 @@ header
             margin-top: 10px
             height: 35px
             width: 35px
-    div.col-sm-1
+    div.col-lg-1
       margin-top: 20px
       #bascket
         text-align: center
@@ -176,6 +211,7 @@ header
             font-family: "ProximaNovaCondensedRegular", sans-serif
             font-size: em(18px)
             padding: 15px 0
+            letter-spacing: 0.001em
             color: #fff
           &:hover
             a
@@ -238,12 +274,14 @@ header
       height: 320px
       h1
         position: absolute
+        letter-spacing: 1px
         bottom: 65px
         color: $hover-color
         font-family: "opensansbold", sans-serif
         font-size: 30px
         text-transform: uppercase
       h3
+        letter-spacing: 0.045em
         bottom: 30px
         color: #fff
         position: absolute
@@ -293,30 +331,32 @@ header
   top: 50%
   left: 50%
   margin: -3px 0 0 -3px
-  
+
 
 .content
   padding: 30px 0
   #collumn-left
-    .list-group-item-heading
-      padding: 10px 0 10px 0
-      a
-        font-family: "opensansbold", sans-serif
-        font-size: 18px
-        color: $hover-color
-    .list-group
-      li
-        margin: 0
-        padding: 2px 0
-        border-right: 2px solid transparent
-        &:hover
-          border-right: 2px solid $main-color
-          a.list-item
-            color: $main-color
-        margin: 5px 0
-        a.list-item
-          font-family: "opensansregular", sans-serif
-          font-size: 12px
+      .col-lg-3.col-md-3
+        border-right: 1px solid #dddddd
+        .list-group-item-heading
+          padding: 10px 0 10px 0
+          a
+            font-family: "opensansbold", sans-serif
+            font-size: 18px
+            color: $hover-color
+        .list-group
+          li
+            margin: 0
+            padding: 2px 0
+            border-right: 2px solid transparent
+            &:hover
+              border-right: 2px solid $main-color
+              a.list-item
+                color: $main-color
+            margin: 5px 0
+            a.list-item
+              font-family: "opensansregular", sans-serif
+              font-size: 12px
   #content
     #advantages
       margin-top: 15px
@@ -345,11 +385,13 @@ header
       .desc-item
         margin-top: 50px
         margin-bottom: 20px
+        
         border: 1px solid transparent
         &:hover
           border: 1px solid #c4c4c4
         a
           img
+            width: 90%
             padding-bottom: 10px
           .desc
             text-align: center
@@ -375,41 +417,44 @@ section.callback
       color: #fff
     .form-callback-big
       form
-        margin: 15px 0 30px 0
+        margin: 10px 0 45px 0
         input
+          display: inline-block
           background-color: transparent
-          width: 21%
+          width: 30%
           border: none
           border-bottom: 2px solid #fff
           margin-right: 30px
+          padding-left: 10px
+          vertical-align: bottom
           &:focus
             border: none
             border-bottom: 2px solid #fff
           @include placeholder
             color: #fff
             font-family: "opensanslightitalic", sans-serif
-            text-indent: 10px
         button
           display: inline-block
           font-family: "opensanssemibold", sans-serif
           font-size: 18px
-          padding: 5px 25px
+          padding: 8px 28px
           color: #fff
           background-color: transparent
           border: 2px solid #fff
           transition: all .3s
+          vertical-align: top
           &:hover
             background-color: #fff
             color: $main-color
             transition: all .3s
     #img
       position: absolute
-      right: 0
+      right: 55px
       bottom: 0px
 
 #shares-hits-novelty
   margin: 50px 0 50px 0
-  .col-sm-12.brd
+  .col-lg-12.brd
     padding: 0
     margin: 0
     &:after
@@ -419,7 +464,7 @@ section.callback
       bottom: 0
       left: 20px
       position: absolute
-    .col-sm-2
+    .col-lg-2
       text-align: center
       h4
         text-transform: uppercase
@@ -517,10 +562,11 @@ section.callback
         a.btn-slick
           position: absolute
           bottom: 30px
-          right: -10px
+          right: -9px
+          font-family: "opensansbold", sans-serif
           button
             border: none
-            padding: 5px 25px 5px 20px
+            padding: 9px 28px 9px 28px
             display: inline-block
             float: right
             background-color: $main-color
@@ -535,10 +581,10 @@ section.callback
               position: absolute
               top: 100%
               right: 0
-              border-top: 10px solid $hover-color
+              border-top: 9px solid $hover-color
               border-left: 0px solid transparent
-              border-right: 10px solid transparent
-              margin-left: -10px
+              border-right: 9px solid transparent
+              margin-left: -9px
     .slick-prev
       left: -50px
     .slick-next
@@ -591,7 +637,7 @@ footer
   .up-footer
     padding-bottom: 20px
     background-color: $main-color
-    .col-sm-2
+    .col-lg-2
       padding: 0
       .foo-1
         ul
@@ -603,7 +649,7 @@ footer
               font-size: 12px
               &:hover
                 text-decoration: underline
-    .col-sm-2
+    .col-lg-2
       padding: 0 auto
       .foo-2
         ul
@@ -616,16 +662,16 @@ footer
               font-size: 12px
               &:hover
                 text-decoration: underline
-    .col-sm-4
+    .col-lg-4.img_footer
       .img
         margin-top: 30px
         text-align: center
         img
-          width: 46%
-    .col-sm-2
+          width: 45%
+    .col-lg-2
       .foo-3
         text-align: center
-    .col-sm-2
+    .col-lg-2
       .foo-4
         padding-left: 20px
 
@@ -642,6 +688,27 @@ footer
       font-size: 12px
       &:hover
         text-decoration: underline
+.foo-3
+  ul.list-inline
+    li
+      position: relative
+      margin-right: 5px
+      a
+        &:after
+          margin-left: 10px
+          content: ''
+          border-top: 1px solid transparent
+          border-right: 1px solid transparent
+          border-bottom: 1px solid transparent
+          border-left: 1px solid #fff
+          position: absolute
+          top: 5px
+          width: 1px
+          height: 11px
+      &:last-child
+        a
+          &:after
+            border: none
 
 .down-footer
   background-color: $hover-color
@@ -678,9 +745,13 @@ footer
   font-family: "opensansitalic", sans-serif
   -webkit-appearance: none
   @include placeholder
+    transition: text-indent 0.3s ease
     color: #444
     font-family: "opensanslightitalic", sans-serif
   &:focus
+    @include placeholder
+      transition: text-indent 0.3s ease
+      text-indent: 300px
     outline: none
 
 .input__label
@@ -693,10 +764,6 @@ footer
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   -webkit-touch-callout: none
-  -webkit-user-select: none
-  -khtml-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
   user-select: none
 
 .input__label-content
@@ -799,4 +866,6 @@ footer
   100%
     opacity: 1
     transform: translate3d(0, -40%, 0)
+
+@import "helpers/kross_ff_ie"
 @import "helpers/media"

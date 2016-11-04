@@ -4,10 +4,54 @@
 //
 ///*==========  Desktop First  ==========*/
 //
-///* Large Devices, Wide Screens */
-//@media only screen and (max-width : 1200px)
-///**/
-//
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .input
+    margin-left: 120px
+  header
+    nav#top
+      div.col-lg-2
+        .logo
+          margin-top: 20px
+          img
+            width: 130%
+      div.col-lg-5.b
+        #top-links
+          li
+            padding-right: 10px
+    div.col-lg-1.b
+      #login
+        text-align: right
+    div.col-lg-3
+      li
+        padding-right: 20px
+    div.col-lg-1.col-md-1
+      margin-top: 20px
+      text-align: left
+      #callback-form
+        position: absolute
+        left: 0
+
+  nav#menu
+    .collapse
+      .nav.navbar-nav
+        li.dropdown
+          a
+            height: 90px
+            #content_drop
+              display: block
+              z-index: 1
+          #content_drop
+            top: 90px
+  .slick-prev
+    left: 0
+  .slick-prev
+    position: absolute
+    right: 0px
+  #up-button
+    bottom: 65px
+    right: 15px
+
 ///* Medium Devices, Desktops */
 //@media only screen and (max-width : 992px)
 ///**/
