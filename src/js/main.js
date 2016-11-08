@@ -65,7 +65,7 @@ $(document).ready(function() {
     arrows: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -74,7 +74,7 @@ $(document).ready(function() {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2

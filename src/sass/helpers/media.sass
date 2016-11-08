@@ -31,7 +31,14 @@
       #callback-form
         position: absolute
         left: 0
-
+  #content
+    #advantages
+      margin-top: 15px
+      .desc-item
+        height: 139px
+        background-color: $main-color
+        padding-bottom: 10px
+        text-align: center
   nav#menu
     .collapse
       .nav.navbar-nav
@@ -44,19 +51,103 @@
           #content_drop
             top: 90px
   .slick-prev
-    left: 0
-  .slick-prev
+    left: 0px
+  .slick-next
     position: absolute
     right: 0px
   #up-button
     bottom: 65px
     right: 15px
 
-///* Medium Devices, Desktops */
-//@media only screen and (max-width : 992px)
-///**/
-//
-//
+  section.callback
+    #callback
+      .form-callback-big
+        form
+          input
+            width: 20%
+  section
+    #shares-hits-novelty
+      .container
+        .row
+          .col-lg-12.col-md-12.brd
+            &:after
+              width: 96%
+            .col-lg-2.col-md-2
+              h4
+                font-size: 16px
+                &:hover
+                  &:after
+                    width: 125px
+  #shares-hits-novelty .slick-bot .slick-prev
+    left: -30px
+  #shares-hits-novelty .slick-bot .slick-next
+    position: absolute
+    right: -30px
+  section
+    #wellcome
+      img
+        margin-top: 40px
+        width: 450px
+
+  footer
+    .up-footer
+      .col-lg-4.img_footer
+        .img
+          img
+            width: 200px
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  header
+    a
+      font-size: em(14px)
+  header
+    nav#top
+      div.col-lg-2
+        .logo
+          img
+            width: 150%
+      div.col-lg-5.b
+        #top-links
+          li
+            padding-right: 0px
+      div.col-lg-2.b
+        padding-right: 12px
+        padding-left: 12px
+        #currency
+          ul.list-inline
+            li
+              margin-right: 0px
+              a
+                &:after
+                  margin-left: 6px
+      div.col-lg-3
+        padding-right: 0px
+        margin-top: 20px
+        li
+          padding-right: 5px
+      div.col-lg-2.b
+        #language
+          padding-right: 6px
+          padding-left: 6px
+          ul.list-inline
+            li
+              margin-right: 0px
+              a
+                &:after
+                  margin-left: 5px
+                  content: ''
+  nav#menu
+    .collapse
+      .nav.navbar-nav
+        li.dropdown
+          a.drop-links
+            font-family: "ProximaNovaCondensedRegular", sans-serif
+            font-size: em(16px)
+            padding: 15px 0
+            letter-spacing: 0.001em
+            color: #fff
+  .input
+    margin-left: 30px
 ///* Small Devices, Tablets */
 //@media only screen and (max-width : 768px)
 ///**/
