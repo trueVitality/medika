@@ -12,14 +12,18 @@
     <title>Medika</title>
   </head>
   <body>
+    <!--хэдер-->
     <header>
+      <!--навигация топ-->
       <nav id="top">
         <div class="container">
           <div class="row">
+            <!--колонка лого-->
             <div class="col-lg-2 col-md-1 col-sm-1">
               <div class="logo"><img src="../img/LOGO.png" alt="">
               </div>
             </div>
+            <!--топ ссылки-->
             <div class="col-lg-5 b col-md-5 col-sm-5">
               <div class="nav pull-left" id="top-links">
                 <ul class="list-inline">
@@ -30,6 +34,7 @@
                 </ul>
               </div>
             </div>
+            <!-- Валюта-->
             <div class="col-lg-2 b col-md-2 col-sm-2">
               <div class="pull-right" id="currency">
                 <ul class="list-inline">
@@ -40,6 +45,7 @@
                 </ul>
               </div>
             </div>
+            <!--языки-->
             <div class="col-lg-2 b col-md-2 col-sm-2">
               <div class="pull-left" id="language">
                 <ul class="list-inline">
@@ -49,9 +55,11 @@
                 </ul>
               </div>
             </div>
+            <!--Логин-->
             <div class="col-lg-1 b col-md-2 col-sm-2">
               <div id="login"><a class="icon"><img src="../img/icons/user.svg" alt=""></a><a class="text">Войти</a></div>
             </div>
+            <!--номера и мэйл-->
             <div class="col-lg-3 col-md-4 col-sm-4">
               <div id="phones">
                 <ul class="list-inline">
@@ -62,8 +70,10 @@
                 </ul>
               </div>
             </div>
+            <!--колбэк форма-->
             <div class="col-lg-1 col-md-1 col-sm-1">
               <div class="pull-right" id="callback-form"><a class="phone-icons"><img src="../img/icons/callback.svg" alt=""></a>
+                <!--попап форма-->
                 <div class="popup-form"><a class="phone-icon"><img src="../img/icons/callback.svg" alt=""></a><a class="close_icon"><img src="../img/icons/close.svg" alt=""></a>
                   <h4>ЗАКАЗАТЬ ЗВОНОК</h4>
                   <form>
@@ -74,17 +84,20 @@
                 </div>
               </div>
             </div>
+            <!--Форма поиска-->
             <div class="col-lg-5 col-md-5 col-sm-5">
               <div class="pull-right" id="search"><span class="input input--hoshi">
                   <input class="input__field input__field--hoshi" id="input-4" placeholder="Что вы ищете?">
                   <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4"><span class="input__label-content input__label-content--hoshi"></span></label></span><a class="search-icons pull-right"><img src="../img/icons/search.svg" alt=""></a></div>
             </div>
+            <!--Корзина-->
             <div class="col-lg-1 col-md-1 col-sm-1">
               <div id="bascket"><a class="empty"><img src="../img/icons/bascket_empty.svg" alt="" id="empty_img"></a><a class="full"><img src="../img/icons/bascket_item.svg" alt="" id="full_img"><span class="number">1</span></a></div>
             </div>
           </div>
         </div>
       </nav>
+      <!--Навбар самый большой :)-->
       <nav id="menu">
         <div class="container">
           <div class="row">
@@ -199,8 +212,9 @@
     </header>
   </body>
 </html>
+<!--Каруселька топ-->
 <div id="slideshow">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="slick-top">
         <div class="slick-item">
@@ -237,11 +251,13 @@
     </div>
   </div>
 </div>
+<!--контент-->
 <div class="content">
   <div class="container">
     <div class="row">
+      <!--Левая колонка-->
       <div id="collumn-left">
-        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col-lg-3 col-md-3 col-sm-4">
           <div class="list-group-item-heading"><a class="item-head">Тематические разделы</a></div>
           <ul class="list-unstyled list-group">
             <li><a class="list-item">Ингаляторы (небулайзеры)</a></li>
@@ -267,8 +283,10 @@
           </ul>
         </div>
       </div>
+      <!--сам контент-->
       <div id="content">
-        <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-9" id="advantages">
+        <!--Преймущества-->
+        <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-8" id="advantages">
           <div class="col-lg-3 col-md-3 desc-item col-sm-3"><img src="../img/icons/features/time1.svg" alt="">
             <div class="desc">
               <p>Более 20 лет на украинском рынке</p>
@@ -290,7 +308,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-9" id="popular-categories">
+        <!--популярные категории-->
+        <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-8" id="popular-categories">
           <div class="popular-head">
             <h3>Популярные категории</h3>
           </div>
@@ -331,6 +350,7 @@
     </div>
   </div>
 </div>
+<!--Секция Колбэка-->
 <section class="callback">
   <div id="callback">
     <div class="container">
@@ -338,6 +358,7 @@
         <h3>Трудности с выбором товара?</h3>
         <h5>Закажите в один клик обратный звонок у нашего специалиста!</h5>
         <div class="col-lg-9 form-callback-big">
+          <!--форма колбэка-->
           <form>
             <input placeholder="Ваше имя">
             <input placeholder="Контактный номер">
@@ -350,18 +371,19 @@
     </div>
   </div>
 </section>
+<!--Акции новинки хиты-->
 <section>
   <div id="shares-hits-novelty">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 brd">
-          <div class="col-lg-2 col-md-2">
+        <div class="col-lg-12 col-md-12 brd col-sm-12">
+          <div class="col-lg-2 col-md-2 col-sm-3">
             <h4>акции</h4>
           </div>
-          <div class="col-lg-2 col-md-2">
+          <div class="col-lg-2 col-md-2 col-sm-3">
             <h4>новинки</h4>
           </div>
-          <div class="col-lg-2 col-md-2">
+          <div class="col-lg-2 col-md-2 col-sm-3">
             <h4>хиты продаж</h4>
           </div>
         </div>
@@ -475,31 +497,32 @@
     </div>
   </div>
 </section>
+<!--статьи и новости-->
 <section>
   <div id="articles-and-news">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <h2>Новости и статьи</h2>
         </div>
-        <div class="col-lg-4 col-md-4">
-          <div class="artic-news"><img src="../img/news/1.jpg" alt="">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="artic-news"><img class="center-block img-responsive" src="../img/news/1.jpg" alt="">
             <div class="date"><span>6.10.2016</span></div>
             <div class="desc-news">
               <p>Новейшая Текар T-CaRe (Capacitive Resistive) технология</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4">
-          <div class="artic-news"><img src="../img/news/2.jpg" alt="">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="artic-news"><img class="center-block img-responsive" src="../img/news/2.jpg" alt="">
             <div class="date"><span>16.10.2016</span></div>
             <div class="desc-news">
               <p>Новейшая Текар T-CaRe (Capacitive Resistive) технология</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4">
-          <div class="artic-news"><img src="../img/news/3.jpg" alt="">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="artic-news"><img class="center-block img-responsive" src="../img/news/3.jpg" alt="">
             <div class="date"><span>26.10.2016</span></div>
             <div class="desc-news">
               <p>Новейшая Текар T-CaRe (Capacitive Resistive) технология</p>
@@ -510,27 +533,29 @@
     </div>
   </div>
 </section>
+<!--Добро пожаловать-->
 <section>
   <div id="wellcome">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6 col-sm-6">
           <h4>ДОБРО ПОЖАЛОВАТЬ В Medika</h4>
           <p>Здоровье - залог успеха в нашей жизни. При небольших признаках болезни или даже малейших проблемах со здоровьем, необходимо сделать качественную диагностику и выяснить первопричину или источник всех проблем, чтобы лечение прошло как можно быстрее и эффективнее. Для реализации всех диагностических процедур необходим высококачественный медицинский инструментарий, медтехника и оборудование. Сейчас медицинское оборудование купить в Украине несложно, но каждый покупатель стремится найти товар по выгодной цене и с хорошим качеством. Во многих случаях именно качество, цена, надежность и узнаваемость бренда влияет на окончательный выбор покупателя.</p>
           <p class="center">Качественное медицинское оборудование от компании «Медика» Киев</p>
           <p>Компания «Медика» - надёжный и проверенный поставщик качественного медицинского оборудования и медтехники на рынке Украины. Она уже более 20 лет успешно работает с различными больницами, клиниками, санаториями и другими медицинскими учреждениями. В магазине можно купить: лабораторное, хирургическое, кардиологическое, стоматологическое и офтальмологическое .... &nbsp;<a>Читать далее</a></p>
         </div>
-        <div class="col-lg-6 col-md-6"><img src="../img/news/4.png" alt="">
+        <div class="col-lg-6 col-md-6 col-sm-6"><img class="img-responsive" src="../img/news/4.png" alt="">
         </div>
       </div>
     </div>
   </div>
 </section>
+<!--Футер-->
 <footer>
   <div class="up-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 col-md-2">
+        <div class="col-lg-2 col-md-2 col-sm-3">
           <div class="foo-1">
             <ul class="list-unstyled">
               <li><a>Домашняя медтехника</a></li>
@@ -541,7 +566,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-md-2">
+        <div class="col-lg-2 col-md-2 col-sm-2">
           <div class="foo-2">
             <ul class="list-unstyled">
               <li><a>Оплата</a></li>
@@ -551,11 +576,11 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 img_footer">
+        <div class="col-lg-4 col-md-4 img_footer col-sm-2">
           <div class="img"><img src="../img/LOGO1.png" alt="">
           </div>
         </div>
-        <div class="col-lg-2 col-md-2">
+        <div class="col-lg-2 col-md-2 col-sm-2">
           <div class="foo-3">
             <ul class="list-inline">
               <li><a>УКР</a></li>
@@ -570,7 +595,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-md-2">
+        <div class="col-lg-2 col-md-2 col-sm-3">
           <div class="foo-4">
             <ul class="list-unstyled">
               <li>(098) 462-99-66</li>

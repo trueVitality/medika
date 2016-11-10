@@ -54,7 +54,14 @@ $(document).ready(function() {
     infinite: true,
     arrows: true,
     //fade: true,
-    speed: 500
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          arrows: false
+        }
+      }]
   });
 
   //Каруселька Новинки/Акции/Хиты продаж
@@ -68,7 +75,7 @@ $(document).ready(function() {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
@@ -76,8 +83,8 @@ $(document).ready(function() {
       {
         breakpoint: 1000,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 3,
+          slidesToScroll: 1
         }
       },
       {

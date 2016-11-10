@@ -25,12 +25,14 @@ input, textarea, button
   img
     width: 40px
     height: 40px
-
+//хэдер
 header
   font-family: "opensansregular", sans-serif
   font-size: em(14px)
+  //навигация топ
   nav#top
     padding-bottom: 10px
+    //колонка лого
     div.col-lg-2
       border-bottom: none
       .logo
@@ -38,12 +40,14 @@ header
         text-align: center
         img
           width: 65%
+    //топ ссылки
     div.col-lg-5.b
       border-bottom: 1px solid $main-color
       margin-top: 20px
       #top-links
         li
           padding-right: 30px
+    // Валюта
     div.col-lg-2.b
       border-bottom: 1px solid $main-color
       margin-top: 20px
@@ -67,6 +71,7 @@ header
               a
                 &:after
                   border: none
+    //языки
     div.col-lg-2.b
       border-bottom: 1px solid $main-color
       margin-top: 20px
@@ -90,6 +95,7 @@ header
               a
                 &:after
                   border: none
+    //Логин
     div.col-lg-1.b
       border-bottom: 1px solid $main-color
       margin-top: 20px
@@ -100,17 +106,20 @@ header
           img
             width: 17px
             height: 17px
+    //номера и мэйл
     div.col-lg-3
       padding-right: 0px
       margin-top: 20px
       li
         padding-right: 20px
+    //колбэк форма
     div.col-lg-1
       margin-top: 20px
       #callback-form
         img
           height: 35px
           width: 35px
+        //попап форма
         .popup-form
           display: none
           padding-bottom: 25px
@@ -164,6 +173,7 @@ header
                 background-color: #fff
                 transition: all .3s
                 background-color: $hover-color
+    //Форма поиска
     div.col-lg-5
       #search
         margin-top: 10px
@@ -174,6 +184,7 @@ header
             margin-top: 10px
             height: 35px
             width: 35px
+    //Корзина
     div.col-lg-1
       margin-top: 20px
       #bascket
@@ -193,6 +204,7 @@ header
           display: none
           img
             width: 35px
+  //Навбар самый большой :)
   nav#menu
     background-color: $main-color
     position: relative
@@ -261,7 +273,7 @@ header
                     font-size: 12px
                     &:hover
                       text-decoration: underline
-
+//Каруселька топ
 #slideshow
   background: linear-gradient(to bottom, #fff, #b1d3f4)
   .slick-top
@@ -293,14 +305,14 @@ header
 
 .slick-prev
   z-index: 1
-  left: -50px
+  left: 265px
   width: 40px
   height: 40px
 .slick-prev::before
   content: url(../img/icons/arrow_left.svg)
   color: $main-color
 .slick-next
-  right: -50px
+  right: 265px
   width: 40px
   height: 40px
 .slick-next:before
@@ -315,7 +327,7 @@ header
   width: 12px
   height: 12px
   position: absolute
-  border: 1px solid #777
+  border: 1px solid $main-color
   border-radius: 50%
 .slick-dots li button:before
   content: ''
@@ -325,21 +337,23 @@ header
   content: ''
   width: 6px
   height: 6px
-  background: #777
+  background: $main-color
   opacity: 1
   border-radius: 50%
   top: 50%
   left: 50%
   margin: -3px 0 0 -3px
 
-
+//контент
 .content
   padding: 30px 0
+  //Левая колонка
   #collumn-left
       .col-lg-3.col-md-3
         border-right: 1px solid #dddddd
         .list-group-item-heading
-          padding: 10px 0 10px 0
+          padding: 0
+          margin-bottom: 20px
           a
             font-family: "opensansbold", sans-serif
             font-size: 18px
@@ -357,9 +371,10 @@ header
             a.list-item
               font-family: "opensansregular", sans-serif
               font-size: 12px
+  //сам контент
   #content
+    //Преймущества
     #advantages
-      margin-top: 15px
       .desc-item
         background-color: $main-color
         padding-bottom: 10px
@@ -374,6 +389,7 @@ header
             font-family: "opensansregular", sans-serif
             font-size: 12px
             color: #fff
+    //популярные категории
     #popular-categories
       padding-bottom: 50px
       .popular-head
@@ -401,6 +417,7 @@ header
               font-family: "opensanssemibold", sans-serif
               color: $hover-color
               font-size: 12px
+//Секция Колбэка
 section.callback
   background-color: $main-color
   padding: 20px 0 0 0
@@ -417,7 +434,9 @@ section.callback
       font-family: "opensanssemibold", sans-serif
       font-size: 14px
       color: #fff
+    //форма колбэка
     .form-callback-big
+      position: relative
       form
         margin: 10px 0 45px 0
         input
@@ -451,9 +470,9 @@ section.callback
             transition: all .3s
     #img
       position: absolute
-      right: 55px
+      right: 200px
       bottom: 0px
-
+//Акции новинки хиты
 #shares-hits-novelty
   margin: 50px 0 50px 0
   .col-lg-12.brd
@@ -591,6 +610,7 @@ section.callback
       left: -50px
     .slick-next
       right: -50px
+//статьи и новости
 #articles-and-news
   background-color: #e9f0f9
   padding: 50px 0
@@ -615,6 +635,7 @@ section.callback
         font-family: "opensansregular",sans-serif
         color: #444444
         font-size: 14px
+//Добро пожаловать
 #wellcome
   .container
     padding: 80px 0
@@ -635,6 +656,7 @@ section.callback
         font-size: 12px
     p.center
       font-size: 14px
+//Футер
 footer
   .up-footer
     padding-bottom: 20px
@@ -724,6 +746,7 @@ footer
       color: #FFF
       &:hover
         text-decoration: underline
+//топ поиск начало
 .input
   margin-left: 200px
   position: relative
@@ -780,7 +803,6 @@ footer
   left: 0
   fill: none
 
-/* Hoshi
 
 .input--hoshi
   overflow: hidden
@@ -867,6 +889,6 @@ footer
   100%
     opacity: 1
     transform: translate3d(0, -40%, 0)
-
+//конец топ поиска
 @import "helpers/kross_ff_ie"
 @import "helpers/media"

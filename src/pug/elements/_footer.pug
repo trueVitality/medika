@@ -1,26 +1,27 @@
 include ../inc/_mixins
+//Футер
 footer
 	.up-footer
 		.container
 			.row
-				.col-lg-2.col-md-2
+				.col-lg-2.col-md-2.col-sm-3
 					.foo-1
 						ul.list-unstyled
 							- var list_footer = ["Домашняя медтехника", "Медецинское оборудование","Лабораторное оборудование", "Ветеринарное оборудование", "Средства реабилитации"];
 								for name in list_footer
 									li
 										a= name
-				.col-lg-2.col-md-2
+				.col-lg-2.col-md-2.col-sm-2
 					.foo-2
 						ul.list-unstyled
 							- var list_footer = ["Оплата", "Доставка","Контакты", "Новости и статьи"];
 								for name in list_footer
 									li
 										a= name
-				.col-lg-4.col-md-4.img_footer
+				.col-lg-4.col-md-4.img_footer.col-sm-2
 					.img
 						+img("LOGO1.png")
-				.col-lg-2.col-md-2
+				.col-lg-2.col-md-2.col-sm-2
 					.foo-3
 						ul.list-inline
 							- var language = ["УКР","РУ","ENG"];
@@ -32,7 +33,7 @@ footer
 								for name in currency
 									li
 										a= name
-				.col-lg-2.col-md-2
+				.col-lg-2.col-md-2.col-sm-3
 					.foo-4
 						ul.list-unstyled
 							- var phones = ["(098) 462-99-66", "(050) 352-76-20", "(063) 237-62-23", "medica@voliacable.com"];

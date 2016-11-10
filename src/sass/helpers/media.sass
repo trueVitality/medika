@@ -4,6 +4,16 @@
 //
 ///*==========  Desktop First  ==========*/
 //
+@media only screen and (max-width : 1366px)
+  .slick-prev
+    left: 35px
+  .slick-next
+    position: absolute
+    right: 35px
+  section.callback
+    #callback
+      #img
+        right: 50px
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
   .input
@@ -51,10 +61,10 @@
           #content_drop
             top: 90px
   .slick-prev
-    left: 0px
+    left: 35px
   .slick-next
     position: absolute
-    right: 0px
+    right: 35px
   #up-button
     bottom: 65px
     right: 15px
@@ -65,6 +75,8 @@
         form
           input
             width: 20%
+      #img
+        right: 120px
   section
     #shares-hits-novelty
       .container
@@ -87,7 +99,6 @@
     #wellcome
       img
         margin-top: 40px
-        width: 450px
 
   footer
     .up-footer
@@ -99,17 +110,22 @@
 @media only screen and (max-width : 992px)
   header
     a
-      font-size: em(14px)
+      font-size: 10px
+  //хэдер
   header
     nav#top
+      //колонка лого
       div.col-lg-2
         .logo
           img
-            width: 150%
+            margin-top: 0px
+            width: 160%
+      //топ ссылки
       div.col-lg-5.b
         #top-links
           li
-            padding-right: 0px
+            padding-right: 10px
+      // Валюта
       div.col-lg-2.b
         padding-right: 12px
         padding-left: 12px
@@ -120,11 +136,10 @@
               a
                 &:after
                   margin-left: 6px
-      div.col-lg-3
-        padding-right: 0px
-        margin-top: 20px
-        li
-          padding-right: 5px
+                  top: 5px
+                  width: 1px
+                  height: 8px
+      //языки
       div.col-lg-2.b
         #language
           padding-right: 6px
@@ -134,20 +149,202 @@
               margin-right: 0px
               a
                 &:after
-                  margin-left: 5px
-                  content: ''
+                  margin-left: 6px
+                  top: 5px
+                  width: 1px
+                  height: 8px
+      //Логин
+      div.col-lg-1.b
+        #login
+          .icon
+            img
+              width: 16px
+              height: 16px
+      //номера и мэйл
+      div.col-lg-3
+        padding-right: 0px
+        margin-top: 20px
+        div#phones
+          ul
+            li
+              font-size: 10px
+              padding-right: 20px
+        //колбэк форма
+        div.col-lg-1
+        #callback-form
+          padding-left: 15px
+          img
+            height: 35px
+            width: 35px
+  //Каруселька топ
+  #slideshow
+    .slick-top
+      .slick-dots
+        position: absolute
+        bottom: 10px
+      .slick-item
+        height: 175px
+        h1
+          font-size: 18px
+          bottom: 65px
+        h3
+          font-size: 18px
+          bottom: 45px
+        img
+          height: 175px
+  .slick-prev
+    left: 15px
+  .slick-next
+    right: 15px
+  //Навбар
   nav#menu
     .collapse
       .nav.navbar-nav
         li.dropdown
           a.drop-links
-            font-family: "ProximaNovaCondensedRegular", sans-serif
             font-size: em(16px)
             padding: 15px 0
-            letter-spacing: 0.001em
-            color: #fff
+
+  //Секция контента
+  .content
+    margin: 20px 0
+    padding: 0
+
+    //левая колонка навигации
+    #collumn-left
+      .col-lg-3.col-md-3
+        border-right: 1px solid #dddddd
+        .list-group-item-heading
+          padding: 0
+          margin-bottom: 20px
+          a
+            font-size: 14px
+        .list-group
+
+    //контент
+    #content
+      #advantages
+        margin-top: 0
+        padding-left: 5px
+        .desc-item
+          height: 165px
+      #popular-categories
+        padding-bottom: 50px
+        .popular-head
+          h3
+            margin-left: 10px
+            margin-top: 20px
+            font-size: 18px
+        .desc-item
+          margin-top: 10px
+          margin-bottom: 10px
+
+  //Секция обратного звонка
+  section.callback
+    padding: 5px 0 0 0
+    #callback
+      h3
+        font-size: 14px
+        font-family: "opensanssemibold",sans-serif
+      h5
+        font-size: 12px
+      .form-callback-big
+        form
+          margin: 20px 0 25px 0
+          input
+            width: 30%
+            margin-right: 15px
+            @include placeholder
+              font-size: 14px
+          button
+            display: block
+            margin-top: 20px
+            font-size: 16px
+            padding: 5px 35px
+      #img
+        right: 30px
+
+  // Акции новинки хиты
+  section
+    #shares-hits-novelty
+      margin: 50px 0 50px 0
+      .col-lg-12.brd
+        &:after
+          width: 95%
+          left: 15px
+        .col-lg-2
+          text-align: center
+          h4
+            &:hover
+              &:after
+                width: 100%
+                left: 32px
+      .slick-bot
+        margin-top: 30px
+        .slick-items
+          height: 340px
+          width: 234px
+          .img-slick
+            img
+              height: 200px
+              width: 200px
+
+  // Акции новинки хиты боковые кнопки карусели
+  #shares-hits-novelty .slick-bot .slick-prev
+    left: -7px
+    width: 20px
+    height: 20px
+  #shares-hits-novelty .slick-bot .slick-next
+    right: -7px
+    width: 20px
+    height: 20px
+  //Секция новости и статьи
+  section
+    #articles-and-news
+      padding: 20px 0
+      .col-lg-12.col-md-12.col-sm-12
+        h2
+          font-size: 18px
+          margin: 0 0 20px 0
+      .col-lg-4
+        padding: 0 10px
+        .artic-news
+          img
+            width: 100%
+          .date
+            span
+              font-size: 10px
+          .desc-news
+            p
+              font-size: 12px
+  //футер
+  footer
+    .up-footer
+      padding-bottom: 20px
+      .col-lg-4.img_footer
+        .img
+          margin-top: 30px
+          text-align: center
+          img
+            width: 100%
+  .foo-3
+    ul.list-inline
+      li
+        position: relative
+        margin-right: 2px
+        a
+          &:after
+            margin-left: 8px
+  .foo-1,.foo-2, .foo-3, .foo-4
+    margin-top: 30px
+
+  //топ поиск инпут
   .input
     margin-left: 30px
+  #up-button
+    img
+      width: 25px
+      height: 25px
 ///* Small Devices, Tablets */
 //@media only screen and (max-width : 768px)
 ///**/
