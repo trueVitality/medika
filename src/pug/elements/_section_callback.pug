@@ -1,0 +1,16 @@
+include ../inc/_mixins
+//Секция Колбэка
+section.callback
+   #callback
+      .container
+         .row
+            h3 Трудности с выбором товара?
+            h5 Закажите в один клик обратный звонок у нашего специалиста!
+            .col-lg-9.form-callback-big
+               //форма колбэка
+               form
+                  input(placeholder="Ваше имя")
+                  input(placeholder="Контактный номер")
+                  button ПЕРЕЗВОНИТЬ
+            #img.col-lg-3.pull-right
+               +img('callback.png')

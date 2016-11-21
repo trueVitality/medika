@@ -26,7 +26,7 @@ var path = {
 	css: 'src/css',
 	main: 'src/css/*',
 	img: 'src/img/**/*',
-	html: 'src/html/*.html',
+	html: 'src/html/**/*.html',
 	pug: 'src/pug/**/*.pug',
 	pugDest: 'src/html/',
 	fonts: 'src/fonts/**/*'
