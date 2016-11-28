@@ -2,12 +2,16 @@
 <!--Левая колонка по подбору параметров-->
 <div class="col-lg-3 col-md-3 col-sm-4" id="leftcolumn-category">
   <h3>Подбор по параметрам</h3>
-  <!--.nstSlider(data-range_min='100', data-range_max='50000', data-cur_min='0', data-cur_max='50000')-->
-  <!--   .bar-->
-  <!--   .leftGrip-->
-  <!--   .rightGrip-->
-  <!--.leftLabel-->
-  <!--.rightLabel-->
+  <p>
+    <label for="amount">Цена, грн</label>
+  </p>
+  <div id="slider-range"></div>
+  <label class="slider-lb">от
+    <input class="slider-input" type="text" id="amount"/>
+  </label>
+  <label class="slider-rb">до
+    <input class="slider-input" type="text" id="amount2"/>
+  </label>
   <p class="manufacturer">Производитель</p>
   <ul class="list-manufacturer list-unstyled">
     <li>
@@ -60,5 +64,146 @@
         <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Jay (Китай)<span>(8)</span></span>
       </label>
     </li>
+    <p class="manufacturer">Управление
+      <ul class="list-manufacturer list-unstyled">
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Электронное<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Механическое<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Сенсорное<span>(8)</span></span>
+          </label>
+        </li>
+      </ul>
+    </p>
+    <p class="manufacturer">Площадь покрытия, м<sup><small>2</small></sup>
+      <ul class="list-manufacturer list-unstyled dbl-column-head">
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">20-30</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">40-60</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">70-90</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">100-120</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">130-150</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">больше 150</span>
+          </label>
+        </li>
+      </ul>
+    </p>
+    <p class="manufacturer">Обьем бака для воды, литры
+      <ul class="list-manufacturer list-unstyled dbl-column-head">
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">до 1</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">1-2</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">3-4</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">5-6</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">7-8</span>
+          </label>
+        </li>
+        <li class="dbl-column">
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">9-10</span>
+          </label>
+        </li>
+      </ul>
+    </p>
+    <p class="manufacturer">Особенности
+      <ul class="list-manufacturer list-unstyled">
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Ионизация<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Таймер<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Автоматическое отключение<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Наличие индикатора<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Встроенный гидростат<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Ароматизация воздуха<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Встроенный гидрометр<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Озонизация<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">SmartWay (Китай)<span>(8)</span></span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test"/><span class="checkbox-custom"></span><span class="label">Jay (Китай)<span>(8)</span></span>
+          </label>
+        </li>
+      </ul>
+    </p>
   </ul>
 </div>

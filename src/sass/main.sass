@@ -181,6 +181,7 @@ header
         span.input
         a
           img
+            padding-top: 7px
             margin-top: 10px
             height: 35px
             width: 35px
@@ -199,11 +200,11 @@ header
             top: -3px
             right: 4px
           img
-            width: 35px
+            width: 40px
         .empty
           display: none
           img
-            width: 35px
+            width: 40px
   //Навбар самый большой :)
   nav#menu
     background-color: $main-color
@@ -372,6 +373,202 @@ header
           a.list-item
             font-family: "opensansregular", sans-serif
             font-size: 12px
+  #rightcolumn_content_cat
+    padding: 0
+    .icon-list-block
+      margin-top: 3px
+      padding-right: 0
+      .icon-list
+        display: inline-block
+        margin-right: 5px
+        cursor: pointer
+      .icon-block
+        display: inline-block
+        cursor: pointer
+    .right-column-title
+      h3
+        margin: 0
+        padding: 0
+        margin-left: 20px
+        color: $main-color
+        font-family: "OpenSansBold", sans-serif
+        font-size: 24px
+    .sorting
+      text-align: right
+      padding-right: 0
+      p
+        display: inline-block
+        margin-top: 7px
+        font-family: "OpenSansRegular", sans-serif
+        font-size: 12px
+      select
+        padding: 1px 5px 1px 10px
+        margin-left: 10px
+        display: inline-block
+        color: $hover-color
+        font-size: 12px
+        border: 1px solid $main-color
+        option
+    .category-content-list
+      .product-thumb
+        margin: 20px 0
+        border: 1px solid #c3dcf5
+        min-height: 210px
+        .col-cat-img
+          .sticker-shares
+            display: none
+            margin-top: 10px
+            top: 0
+            text-transform: uppercase
+            position: absolute
+            right: 0
+            background-color: #fc855a
+            color: #fff
+            padding: 3px 15px 3px 20px
+            font-family: "opensansregular",sans-serif
+            font-size: 16px
+            border-radius: 20px 0 0 20px
+          .sticker-hits
+            display: block
+            margin-top: 10px
+            margin-right: 10px
+            top: 0
+            text-transform: uppercase
+            position: absolute
+            right: 25px
+            background-color: #fc855a
+            color: #fff
+            padding: 20px 14px 20px 14px
+            font-family: "opensansbold",sans-serif
+            font-size: 16px
+            border-radius: 50%
+            transform: rotate(-30deg)
+          .sticker-novelty
+            display: none
+            margin-top: 10px
+            top: 0
+            text-transform: uppercase
+            position: absolute
+            right: 25px
+            background-color: #fc855a
+            color: #fff
+            padding: 3px 15px 3px 20px
+            font-family: "opensansregular",sans-serif
+            font-size: 16px
+            border-radius: 20px 0 0 20px
+          .img-block
+            text-align: center
+            a
+              img
+                height: 155px
+          .likes-star-block
+            button
+              background: #fff
+              background-color: none
+              border: none
+              &:first-child
+                color: #d1d1d1
+                margin-left: 10px
+                font-size: 18px
+                &:hover
+                  color: #fc855a
+              &:nth-child(2)
+                margin-left: 10px
+                height: 16px
+                width: 18px
+                background: url("../img/icons/cat/libra.png")
+                &:hover
+                  background: url("../img/icons/cat/libra-hover.png")
+            .rating
+              margin-left: 70px
+              display: inline-block
+              p
+                font-size: 22px
+                span
+                  color: #d1d1d1
+                  cursor: pointer
+                  display: inline-block
+                  &:hover
+                    color: #fc855a
+        .col-cat-desc
+          .product-title
+            padding: 10px 0
+            font-family: "OpenSansSemiBold", sans-serif
+            color: #49494a
+            font-size: 12px
+            font-weight: 600
+            padding-right: 40px
+          .product-desc
+            font-family: "OpenSansRegular", sans-serif
+            color: #49494a
+            font-size: 12px
+            padding-right: 40px
+          .product-count
+            position: absolute
+            bottom: -51px
+            p
+              font-family: "OpenSansSemiBold", sans-serif
+              font-size: 18px
+              color: $hover-color
+              span
+                padding: 0 3px
+                font-size: 12px
+        .col-cat-but
+          min-height: 210px
+          position: relative
+          .buy-buttons
+            left: 21px
+            position: absolute
+            font-family: "opensansbold", sans-serif
+            min-height: 210px
+            a
+              position: absolute
+              font-family: "OpenSansSemibold", sans-serif
+              font-size: 12px
+              color: #fc855a
+              width: 100px
+              left: 10px
+              bottom: 70px
+            button
+              bottom: 20px
+              position: absolute
+              text-transform: uppercase
+              border: none
+              padding: 9px 25px 9px 30px
+              display: inline-block
+              float: right
+              background-color: $main-color
+              color: #fff
+              font-size: 18px
+              transition: all .3s
+              &:hover
+                transition: all .3s
+                background-color: $hover-color
+              &:after
+                content: ""
+                position: absolute
+                top: 100%
+                right: 0
+                border-top: 9px solid $hover-color
+                border-left: 0px solid transparent
+                border-right: 9px solid transparent
+                margin-left: -9px
+    .button-str
+      text-align: center
+      .btn-group
+        button
+          background-color: #fff
+          border: none
+          &.active
+            pointer-events: none
+            background-color: none
+            color: $main-color
+            &:hover
+              background-color: #fff
+          &:hover
+            background-color: #c3dcf5
+        p
+          display: inline-block
   #breakcrumb
     padding-left: 0
     ol.breadcrumb
@@ -395,17 +592,52 @@ header
   //Левая колонка категорий
   #leftcolumn-category
     padding-left: 0
+    border-right: 1px solid lightgray
     h3
+      margin: 0 0 25px 0
       font-family: "opensansbold", sans-serif
       font-size: 18px
       color: $hover-color
+    #slider-range
+      z-index: 0
+      width: 230px
+      .ui-widget-header
+        background-color: #c3dcf5
+    .slider
+      &-lb
+        font-family: "opensansregular", sans-serif
+        font-size: 12px
+        padding: 15px 0
+        .slider-input
+          height: 20px
+          font-family: "opensansregular", sans-serif
+          font-size: 12px
+          text-align: center
+          margin-left: 15px
+          width: 50px
+          border: 1px solid $main-color
+          color: $main-color
+      &-rb
+        font-family: "opensansregular", sans-serif
+        font-size: 12px
+        margin-left: 15px
+        padding: 15px 0
+        .slider-input
+          height: 20px
+          text-align: center
+          color: $main-color
+          margin-left: 15px
+          width: 50px
+          border: 1px solid $main-color
     .manufacturer
+      padding: 6px 0 3px 0
       color: #383838
       font-size: 14px
       font-family: "Open Sans Semibold", sans-serif
     .list-manufacturer
       .checkbox
         display: none
+
       .checkbox-custom
         position: relative
         width: 12px
@@ -415,10 +647,15 @@ header
         display: inline-block
         vertical-align: middle
       .label
+        font-family: "opensansregular", sans-serif
         color: #383838
+        font-weight: 400
         font-size: 12px
         display: inline-block
         vertical-align: middle
+        span
+          margin-left: 3px
+          color: #9c9b9b
       .checkbox:checked + .checkbox-custom::before
         content: ""
         display: block
@@ -431,6 +668,13 @@ header
         left: 0px
         background-color: $main-color
         border-radius: 0px
+    .dbl-column-head
+      columns: 100px 3
+      li.dbl-column
+        label
+          display: block
+    .list-manufacturer
+      li
 
   //Наши Контакты
   #contacts-content

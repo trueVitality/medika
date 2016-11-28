@@ -2,12 +2,13 @@ include ../inc/_mixins
 //Левая колонка по подбору параметров
 #leftcolumn-category.col-lg-3.col-md-3.col-sm-4
    h3 Подбор по параметрам
-   //.nstSlider(data-range_min='100', data-range_max='50000', data-cur_min='0', data-cur_max='50000')
-   //   .bar
-   //   .leftGrip
-   //   .rightGrip
-   //.leftLabel
-   //.rightLabel
+   p
+      label(for="amount") Цена, грн
+   div#slider-range
+   label.slider-lb от
+      input.slider-input(type="text" id="amount")
+   label.slider-rb до
+      input.slider-input(type="text" id="amount2")
    p.manufacturer Производитель
    ul.list-manufacturer.list-unstyled
       li
@@ -70,3 +71,152 @@ include ../inc/_mixins
             span(class="checkbox-custom")
             span(class="label") Jay (Китай)
                span (8)
+      p.manufacturer Управление
+         ul.list-manufacturer.list-unstyled
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Электронное
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Механическое
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Сенсорное
+                     span (8)
+      p.manufacturer
+         | Площадь покрытия, м
+         sup
+            small 2
+         ul.list-manufacturer.list-unstyled.dbl-column-head
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 20-30
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 40-60
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 70-90
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 100-120
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 130-150
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") больше 150
+      p.manufacturer Обьем бака для воды, литры
+         ul.list-manufacturer.list-unstyled.dbl-column-head
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") до 1
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 1-2
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 3-4
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 5-6
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 7-8
+            li.dbl-column
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") 9-10
+      p.manufacturer Особенности
+         ul.list-manufacturer.list-unstyled
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Ионизация
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Таймер
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Автоматическое отключение
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Наличие индикатора
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Встроенный гидростат
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Ароматизация воздуха
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Встроенный гидрометр
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Озонизация
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") SmartWay (Китай)
+                     span (8)
+            li
+               label
+                  input(class="checkbox" type="checkbox" name="checkbox-test")
+                  span(class="checkbox-custom")
+                  span(class="label") Jay (Китай)
+                     span (8)
