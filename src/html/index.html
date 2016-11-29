@@ -214,425 +214,46 @@
   </body>
 </html>
 <!--include elements/_slideshow_top-->
-<!--контент-->
-<div class="content">
+<!--include elements/_content
+//include elements/_breakcrumb
+//include elements/_leftcolumn_cat
+//include elements/_rightcolumn_content_catt
+//include elements/_column_left
+//include elements/_advantages
+//include elements/_popular-categories
+//include elements/_contacts
+//include elements/_payment
+-->
+<section id="private">
   <div class="container">
-    <div class="row"></div>
-    <!--Навигационный маршрут-->
-    <div class="col-lg-12 col-md-12 col-sm-12" id="breakcrumb">
-      <ol class="breadcrumb">
-        <li><a>Главная</a></li>
-        <li><a>Оборудование для кислородной терапии</a></li>
-        <li class="active">Кислородные концентраторы</li>
-      </ol>
-    </div>
-    <!--Левая колонка по подбору параметров-->
-    <div class="col-lg-3 col-md-3 col-sm-4" id="leftcolumn-category">
-      <h3>Подбор по параметрам</h3>
-      <p>
-        <label for="amount">Цена, грн</label>
-      </p>
-      <div id="slider-range"></div>
-      <label class="slider-lb">от
-        <input class="slider-input" type="text" id="amount">
-      </label>
-      <label class="slider-rb">до
-        <input class="slider-input" type="text" id="amount2">
-      </label>
-      <p class="manufacturer">Производитель</p>
-      <ul class="list-manufacturer list-unstyled">
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Cooper & Hunter (США)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Cooper & Hunter (США)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Air-O-Swiss (Швейцария)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Neoclima (Корея)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Ballu (Китай)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Venta (Германия)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Valore (Китай)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Wild Wind (Китай)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">SmartWay (Китай)<span>(8)</span></span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Jay (Китай)<span>(8)</span></span>
-          </label>
-        </li>
-        <p class="manufacturer">Управление
-          <ul class="list-manufacturer list-unstyled">
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Электронное<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Механическое<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Сенсорное<span>(8)</span></span>
-              </label>
-            </li>
-          </ul>
-        </p>
-        <p class="manufacturer">Площадь покрытия, м<sup><small>2</small></sup>
-          <ul class="list-manufacturer list-unstyled dbl-column-head">
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">20-30</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">40-60</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">70-90</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">100-120</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">130-150</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">больше 150</span>
-              </label>
-            </li>
-          </ul>
-        </p>
-        <p class="manufacturer">Обьем бака для воды, литры
-          <ul class="list-manufacturer list-unstyled dbl-column-head">
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">до 1</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">1-2</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">3-4</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">5-6</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">7-8</span>
-              </label>
-            </li>
-            <li class="dbl-column">
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">9-10</span>
-              </label>
-            </li>
-          </ul>
-        </p>
-        <p class="manufacturer">Особенности
-          <ul class="list-manufacturer list-unstyled">
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Ионизация<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Таймер<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Автоматическое отключение<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Наличие индикатора<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Встроенный гидростат<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Ароматизация воздуха<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Встроенный гидрометр<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Озонизация<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">SmartWay (Китай)<span>(8)</span></span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Jay (Китай)<span>(8)</span></span>
-              </label>
-            </li>
-          </ul>
-        </p>
-      </ul>
-    </div>
-    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="rightcolumn_content_cat">
-      <div class="icon-list-block col-lg-1 col-md-1 col-sm-1 col-xs-1">
-        <div class="icon-list"><img src="../img/icons/cat/icon-list.png"></div>
-        <div class="icon-block"><img src="../img/icons/cat/icon-block.png"></div>
-      </div>
-      <div class="right-column-title col-lg-7 col-md-7 col-sm-7 col-xs-7">
-        <h3>Кислородные концентраторы</h3>
-      </div>
-      <div class="sorting col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <p>Сортировать по:</p>
-        <select>
-          <option>Популярности</option>
-          <option>Цена</option>
-          <option>Новинки</option>
-        </select>
-      </div>
-      <div class="category-content-list col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="product-thumb">
-          <div class="col-md-4 col-sm-4 col-xs-12 col-cat-img">
-            <div class="sticker-shares">акция</div>
-            <div class="sticker-hits">хит</div>
-            <div class="sticker-novelty">новинка</div>
-            <div class="img-block"><a><img src="../img/products/img.png"></a></div>
-            <div class="likes-star-block">
-              <button>❤</button>
-              <button></button>
-              <div class="rating">
-                <p><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12 col-cat-desc">
-            <p class="product-title">Медицинский кислородный концентратор «Медика» JAY-1</p>
-            <p class="product-desc">Переносное малогабаритное, надёжное устройство для кислородной терапии, которое удобно использовать во время путешествия всеми видами транспорта и в домашних условиях...</p>
-            <div class="product-count">
-              <p>12 830<span>грн</span></p>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-12 col-cat-but">
-            <div class="buy-buttons"><a>Купить в 1 клик</a>
-              <button>купить</button>
-            </div>
-          </div>
+    <div class="row">
+      <div class="header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="private-title col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div class="h2">Личный кабинет</div>
+        </div>
+        <div class="private-exit pull-right col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div class="h3">Выход</div>
         </div>
       </div>
-      <div class="category-content-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="product-thumb col-lg-4 col-md-4 col-sm-6 col-xs-12">
-          <div class="img-block"><img src="../img/product/img5.png"></div>
-          <div class="likes-star-block"></div>
-          <div class="desc-block"></div>
-          <div class="count"></div>
-          <div class="button-block"></div>
+      <div class="content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="title col-lg-2 col-md-2 col-sm-3">
+          <div class="h3">Личные данные</div>
         </div>
-      </div>
-      <div class="button-str col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="btn-group">
-          <button>1</button>
-          <button>2</button>
-          <button class="active">3</button>
-          <button>4</button>
-          <button>5</button><span>...</span>
-          <button>9</button>
+        <div class="title col-lg-2 col-md-2 col-sm-3">
+          <div class="h3">Адресная книга</div>
         </div>
-      </div>
-    </div>
-    <!--include elements/_column_left-->
-    <!--include elements/_advantages-->
-    <!--include elements/_popular-categories-->
-    <!--include elements/_contacts-->
-    <!--include elements/_payment-->
-  </div>
-</div>
-<!--include elements/_section_callback-->
-<!--Акции новинки хиты-->
-<section>
-  <div id="shares-hits-novelty">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 brd col-sm-12">
-          <div class="col-lg-2 col-md-2 col-sm-3">
-            <h4>акции</h4>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-3">
-            <h4>новинки</h4>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-3">
-            <h4>хиты продаж</h4>
-          </div>
+        <div class="title col-lg-2 col-md-2 col-sm-3">
+          <div class="h3">Избраное</div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="slick-bot">
-          <div class="slick-items">
-            <div class="sticker-shares">акция</div>
-            <div class="sticker-hits">хит</div>
-            <div class="sticker-novelty">новинка</div>
-            <div class="img-slick"><img src="../img/products/img.png" alt="">
-            </div>
-            <div class="desc-slick">
-              <h5>Универсальный ирригатор полости рта WP-100E2</h5>
-              <div class="count">
-                <p>3050<span>грн</span></p>
-              </div><a class="btn-slick">
-                <button>КУПИТЬ</button></a>
-            </div>
-          </div>
-          <div class="slick-items">
-            <div class="sticker-shares">акция</div>
-            <div class="sticker-hits">хит</div>
-            <div class="sticker-novelty">новинка</div>
-            <div class="img-slick"><img src="../img/products/img2.png" alt="">
-            </div>
-            <div class="desc-slick">
-              <h5>Увлажнитель воздуха Boneco 7135</h5>
-              <div class="count">
-                <p>3050<span>грн</span></p>
-              </div><a class="btn-slick">
-                <button>КУПИТЬ</button></a>
-            </div>
-          </div>
-          <div class="slick-items">
-            <div class="sticker-shares">акция</div>
-            <div class="sticker-hits">хит</div>
-            <div class="sticker-novelty">новинка</div>
-            <div class="img-slick"><img src="../img/products/img3.png" alt="">
-            </div>
-            <div class="desc-slick">
-              <h5>Термометр LONGEVITA MT- 4320</h5>
-              <div class="count">
-                <p>3050<span>грн</span></p>
-              </div><a class="btn-slick">
-                <button>КУПИТЬ</button></a>
-            </div>
-          </div>
-          <div class="slick-items">
-            <div class="sticker-shares">акция</div>
-            <div class="sticker-hits">хит</div>
-            <div class="sticker-novelty">новинка</div>
-            <div class="img-slick"><img src="../img/products/img4.png" alt="">
-            </div>
-            <div class="desc-slick">
-              <h5>Стетофонендоскоп педиатрический «MD One™ Stainless Steel Dual Head»</h5>
-              <div class="count">
-                <p>3050<span>грн</span></p>
-              </div><a class="btn-slick">
-                <button>КУПИТЬ</button></a>
-            </div>
-          </div>
-          <div class="slick-items">
-            <div class="img-slick"><img src="../img/products/img.png" alt="">
-            </div>
-            <div class="desc-slick">
-              <h5>Универсальный ирригатор полости рта WP-100E2</h5>
-              <div class="count">
-                <p>3050<span>грн</span></p>
-              </div><a class="btn-slick">
-                <button>КУПИТЬ</button></a>
-            </div>
-          </div>
-          <div class="slick-items">
-            <div class="img-slick"><img src="../img/products/img2.png" alt="">
-            </div>
-            <div class="desc-slick">
-              <h5>Увлажнитель воздуха Boneco 7135</h5>
-              <div class="count">
-                <p>3050<span>грн</span></p>
-              </div><a class="btn-slick">
-                <button>КУПИТЬ</button></a>
-            </div>
-          </div>
-          <div class="slick-items">
-            <div class="img-slick"><img src="../img/products/img3.png" alt="">
-            </div>
-            <div class="desc-slick">
-              <h5>Термометр LONGEVITA MT- 4320</h5>
-              <div class="count">
-                <p>3050<span>грн</span></p>
-              </div><a class="btn-slick">
-                <button>КУПИТЬ</button></a>
-            </div>
-          </div>
-          <div class="slick-items">
-            <div class="img-slick"><img src="../img/products/img4.png" alt="">
-            </div>
-            <div class="desc-slick">
-              <h5>Стетофонендоскоп педиатрический «MD One™ Stainless Steel Dual Head»</h5>
-              <div class="count">
-                <p>3050<span>грн</span></p>
-              </div><a class="btn-slick">
-                <button>КУПИТЬ</button></a>
-            </div>
-          </div>
+        <div class="title col-lg-2 col-md-2 col-sm-3">
+          <div class="h3">История заказов</div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!--include elements/_section_callback-->
+<!--include elements/_section_shares-hits-novelty-->
 <!--статьи и новости-->
 <section>
   <div id="articles-and-news">

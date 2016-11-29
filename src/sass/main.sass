@@ -14,6 +14,54 @@ a
     cursor: pointer
 input, textarea, button
     outline: none
+.hidden
+  display: none
+//стикеры новинки акции хиты
+.sticker-shares
+  &:after
+    content: "Акция"
+    font-family: "opensansregular",sans-serif
+    font-size: 16px
+    margin-top: 12px
+    top: 2px
+    text-transform: uppercase
+    position: absolute
+    right: 0
+    background-color: #fc855a
+    color: #fff
+    padding: 3px 15px 3px 20px
+    border-radius: 20px 0 0 20px
+.sticker-hits
+  &:after
+    content: "хит"
+    margin-top: 12px
+    top: -5px
+    text-transform: uppercase
+    position: absolute
+    right: 10px
+    background-color: #fc855a
+    color: #fff
+    padding: 20px 14px 20px 14px
+    font-family: "opensansbold",sans-serif
+    font-size: 16px
+    border-radius: 50%
+    transform: rotate(-30deg)
+.sticker-novelty
+  &:after
+    content: "новинка"
+    margin-top: 12px
+    top: 2px
+    text-transform: uppercase
+    position: absolute
+    right: 0px
+    background-color: #fc855a
+    color: #fff
+    padding: 3px 15px 3px 20px
+    font-family: "opensansregular",sans-serif
+    font-size: 16px
+    border-radius: 20px 0 0 20px
+
+
 
 //кнопка вверх
 #up-button
@@ -409,152 +457,209 @@ header
         font-size: 12px
         border: 1px solid $main-color
         option
-    .category-content-list
-      .product-thumb
-        margin: 20px 0
-        border: 1px solid #c3dcf5
-        min-height: 210px
-        .col-cat-img
-          .sticker-shares
-            display: none
-            margin-top: 10px
-            top: 0
-            text-transform: uppercase
-            position: absolute
-            right: 0
-            background-color: #fc855a
-            color: #fff
-            padding: 3px 15px 3px 20px
-            font-family: "opensansregular",sans-serif
-            font-size: 16px
-            border-radius: 20px 0 0 20px
-          .sticker-hits
-            display: block
-            margin-top: 10px
-            margin-right: 10px
-            top: 0
-            text-transform: uppercase
-            position: absolute
-            right: 25px
-            background-color: #fc855a
-            color: #fff
-            padding: 20px 14px 20px 14px
-            font-family: "opensansbold",sans-serif
-            font-size: 16px
-            border-radius: 50%
-            transform: rotate(-30deg)
-          .sticker-novelty
-            display: none
-            margin-top: 10px
-            top: 0
-            text-transform: uppercase
-            position: absolute
-            right: 25px
-            background-color: #fc855a
-            color: #fff
-            padding: 3px 15px 3px 20px
-            font-family: "opensansregular",sans-serif
-            font-size: 16px
-            border-radius: 20px 0 0 20px
+    .category-content
+      padding-left: 0
+      padding-right: 0
+      .product-thumb-grid
+        .block-pro
+          margin: 10px 0
+          position: relative
+          text-align: center
+          border: 1px solid #c3dcf5
           .img-block
-            text-align: center
-            a
-              img
-                height: 155px
-          .likes-star-block
-            button
-              background: #fff
-              background-color: none
-              border: none
-              &:first-child
-                color: #d1d1d1
-                margin-left: 10px
-                font-size: 18px
-                &:hover
-                  color: #fc855a
-              &:nth-child(2)
-                margin-left: 10px
-                height: 16px
-                width: 18px
-                background: url("../img/icons/cat/libra.png")
-                &:hover
-                  background: url("../img/icons/cat/libra-hover.png")
-            .rating
-              margin-left: 70px
-              display: inline-block
-              p
-                font-size: 22px
-                span
+            padding: 10px 0
+            .likes-star-block
+              margin: 0
+              button
+                background: #fff
+                background-color: none
+                border: none
+                &:first-child
                   color: #d1d1d1
-                  cursor: pointer
-                  display: inline-block
+                  margin-left: 0px
+                  font-size: 18px
                   &:hover
                     color: #fc855a
-        .col-cat-desc
-          .product-title
-            padding: 10px 0
+                &:nth-child(2)
+                  margin-left: 10px
+                  height: 16px
+                  width: 18px
+                  background: url("../img/icons/cat/libra.png")
+                  &:hover
+                    background: url("../img/icons/cat/libra-hover.png")
+              .rating
+                margin-left: 70px
+                display: inline-block
+                p
+                  font-size: 22px
+                  span
+                    color: #d1d1d1
+                    cursor: pointer
+                    display: inline-block
+                    &:hover
+                      color: #fc855a
+          .title-block
             font-family: "OpenSansSemiBold", sans-serif
             color: #49494a
             font-size: 12px
             font-weight: 600
-            padding-right: 40px
-          .product-desc
+          .count
+            text-align: left
+            height: 110px
+            .price
+              position: absolute
+              bottom: 30px
+              padding: 0px 0 0px 15px
+              vertical-align: bottom
+              p.old-price
+                margin: 0
+                color: #fc855a
+                font-size: 14px
+                text-decoration: line-through
+              p.new-price
+                font-family: "OpenSansSemiBold", sans-serif
+                font-size: 18px
+                color: $hover-color
+                margin: 0
+                span
+                  padding: 0 3px
+                  font-size: 12px
+          .button-block
+            display: inline-block
+            position: absolute
+            bottom: 0px
+            .buy-buttons
+              top: 0
+              left: 9px
+              position: relative
+              font-family: "opensansbold", sans-serif
+              a
+                position: absolute
+                font-family: "OpenSansSemibold", sans-serif
+                font-size: 12px
+                color: #fc855a
+                width: 100px
+                left: 10px
+                bottom: 70px
+              button
+                bottom: 20px
+                position: absolute
+                text-transform: uppercase
+                border: none
+                padding: 9px 25px 9px 30px
+                display: inline-block
+                float: right
+                background-color: $main-color
+                color: #fff
+                font-size: 18px
+                transition: all .3s
+                &:hover
+                  transition: all .3s
+                  background-color: $hover-color
+                &:after
+                  content: ""
+                  position: absolute
+                  top: 100%
+                  right: 0
+                  border-top: 9px solid $hover-color
+                  border-left: 0px solid transparent
+                  border-right: 9px solid transparent
+                  margin-left: -9px
+      .product-thumb-list
+        .block-pro
+          height: 210px
+          .img-block
+            margin-left: 20px
+            float: left
+            padding: 10px 0
+            display: block
+            img
+              width: 50%
+            .likes-star-block
+              margin: 0
+              button
+              .rating
+          .title-block
+            line-height: 14px
+            margin: 20px 194px 0 287px
+            text-align: left
+            font-family: "OpenSansBold", sans-serif
+            color: #49494a
+            font-size: 12px
+            font-weight: 400
+          .desc-block
+            line-height: 14px
+            margin: 0px 194px 0 287px
+            text-align: left
             font-family: "OpenSansRegular", sans-serif
             color: #49494a
             font-size: 12px
-            padding-right: 40px
-          .product-count
-            position: absolute
-            bottom: -51px
-            p
-              font-family: "OpenSansSemiBold", sans-serif
-              font-size: 18px
-              color: $hover-color
-              span
-                padding: 0 3px
-                font-size: 12px
-        .col-cat-but
-          min-height: 210px
-          position: relative
-          .buy-buttons
-            left: 21px
-            position: absolute
-            font-family: "opensansbold", sans-serif
-            min-height: 210px
-            a
+          .count
+            display: block
+            .price
               position: absolute
-              font-family: "OpenSansSemibold", sans-serif
-              font-size: 12px
-              color: #fc855a
-              width: 100px
-              left: 10px
-              bottom: 70px
-            button
-              bottom: 20px
-              position: absolute
-              text-transform: uppercase
-              border: none
-              padding: 9px 25px 9px 30px
-              display: inline-block
-              float: right
-              background-color: $main-color
-              color: #fff
-              font-size: 18px
-              transition: all .3s
-              &:hover
-                transition: all .3s
-                background-color: $hover-color
-              &:after
-                content: ""
+              bottom: 26px
+              left: 270px
+              padding: 0px 0 0px 15px
+              vertical-align: bottom
+              p.old-price
+                margin: 0
+                color: #fc855a
+                font-size: 14px
+                text-decoration: line-through
+              p.new-price
+                font-family: "OpenSansSemiBold", sans-serif
+                font-size: 18px
+                color: $hover-color
+                margin: 0
+                span
+                  padding: 0 3px
+                  font-size: 12px
+          .button-block
+            display: inline-block
+            position: absolute
+            bottom: 0px
+            right: 125px
+            .buy-buttons
+              top: 0
+              position: relative
+              font-family: "opensansbold", sans-serif
+              a
                 position: absolute
-                top: 100%
-                right: 0
-                border-top: 9px solid $hover-color
-                border-left: 0px solid transparent
-                border-right: 9px solid transparent
-                margin-left: -9px
+                font-family: "OpenSansSemibold", sans-serif
+                font-size: 12px
+                color: #fc855a
+                width: 100px
+                left: 10px
+                bottom: 70px
+              button
+                bottom: 20px
+                position: absolute
+                text-transform: uppercase
+                border: none
+                padding: 9px 25px 9px 30px
+                display: inline-block
+                float: right
+                background-color: $main-color
+                color: #fff
+                font-size: 18px
+                transition: all .3s
+                &:hover
+                  transition: all .3s
+                  background-color: $hover-color
+                &:after
+                  content: ""
+                  position: absolute
+                  top: 100%
+                  right: 0
+                  border-top: 9px solid $hover-color
+                  border-left: 0px solid transparent
+                  border-right: 9px solid transparent
+                  margin-left: -9px
+
     .button-str
       text-align: center
+      padding: 30px 0
       .btn-group
         button
           background-color: #fff
@@ -569,6 +674,7 @@ header
             background-color: #c3dcf5
         p
           display: inline-block
+  //хлебные крошки
   #breakcrumb
     padding-left: 0
     ol.breadcrumb
@@ -593,11 +699,21 @@ header
   #leftcolumn-category
     padding-left: 0
     border-right: 1px solid lightgray
-    h3
-      margin: 0 0 25px 0
+    .h3
+      margin: 5px 0 25px 0
       font-family: "opensansbold", sans-serif
       font-size: 18px
       color: $hover-color
+    ul.list-compare
+      li
+        display: inline-block
+        button
+          display: block
+          background: none
+          border: none
+        div
+          a
+            display: block
     #slider-range
       z-index: 0
       width: 230px
@@ -637,7 +753,6 @@ header
     .list-manufacturer
       .checkbox
         display: none
-
       .checkbox-custom
         position: relative
         width: 12px
@@ -669,6 +784,7 @@ header
         background-color: $main-color
         border-radius: 0px
     .dbl-column-head
+      margin-right: 50px
       columns: 100px 3
       li.dbl-column
         label
@@ -1017,6 +1133,37 @@ section.callback
         font-size: 12px
     p.center
       font-size: 14px
+
+#private
+  padding: 60px 0
+  .header
+    .private-title
+      padding: 0
+      text-align: left
+      font-family: "opensansbold", sans-serif
+      font-size: 24px
+      color: $main-color
+      .h2
+        margin-bottom: 0
+        margin-top: 0
+    .private-exit
+      font-family: "opensanssemibold", sans-serif
+      font-size: 18px
+      color: $main-color
+      padding: 0
+      text-align: right
+      .h3
+        margin-bottom: 0
+        margin-top: 5px
+  .content
+    .title
+      .h3
+        font-family: "opensansregular",sans-serif
+        color: $gray
+        font-size: 18px
+        &:hover
+          color: $hover-color
+          cursor: pointer
 //Футер
 footer
   .up-footer

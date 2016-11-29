@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+
+  //показываем активную кнопку
+  $(".icon-list img").attr('src', '../img/icons/cat/icon-list-hover.png');
+  //табы grid list
+  $(".icon-block").click(function(){
+    $(".icon-list img").attr('src', '../img/icons/cat/icon-list.png');
+    $(".icon-block img").attr('src', '../img/icons/cat/icon-block-hover.png');
+    $(".product-thumb-grid").removeClass('product-thumb-list');
+    $(".product-thumb-grid").addClass('col-lg-4 col-md-4 col-sm-6');
+    $(".desc-block").addClass("hidden");
+  });
+
+  $(".icon-list").click(function(){
+    $(".icon-block img").attr('src', '../img/icons/cat/icon-block.png');
+    $(".icon-list img").attr('src', '../img/icons/cat/icon-list-hover.png');
+    $(".product-thumb-grid").removeClass('col-lg-4 col-md-4 col-sm-6');
+    $(".product-thumb-grid").addClass('product-thumb-list');
+    $(".desc-block").removeClass("hidden");
+  });
+
+
   //slider jquery ui
   $( "#slider-range" ).slider({
     range: true,
@@ -14,7 +35,7 @@ $(document).ready(function() {
   $("#amount").val($("#slider-range").slider("values", 0 ));
   $("#amount2").val($("#slider-range").slider( "values", 1 ));
 
-  // Изменение местоположения ползунка при вводиде данных в первый элемент input
+  // Изменение местоположения ползунка при вводе данных в первый
   $("input#amount").change(function(){
     var value1=$("input#amount").val();
     var value2=$("input#amount2").val();
@@ -25,7 +46,7 @@ $(document).ready(function() {
     $("#slider-range").slider("values",0,value1);
   });
 
-  // Изменение местоположения ползунка при вводиде данных в второй элемент input
+  // Изменение местоположения ползунка при вводиде данных в второй
   $("input#amount2").change(function(){
     var value1=$("input#amount").val();
     var value2=$("input#amount2").val();
@@ -52,30 +73,6 @@ $(document).ready(function() {
 
   });
 
-
-  //hover
-  $('.icon-list').hover(function() {
-    $(".icon-list img").attr('src', '../img/icons/cat/icon-list-hover.png');
-  }, function() {
-    $(".icon-list img").attr('src', '../img/icons/cat/icon-list.png');
-  });
-  $('.icon-block').hover(function() {
-    $(".icon-block img").attr('src', '../img/icons/cat/icon-block-hover.png');
-  }, function() {
-    $(".icon-block img").attr('src', '../img/icons/cat/icon-block.png');
-  });
-
-  //hover
-  $('#empty_img').hover(function() {
-    $("#empty_img").attr('src', '../img/icons/bascket_empty_hover.svg');
-  }, function() {
-    $("#empty_img").attr('src', '../img/icons/bascket_empty.svg');
-  });
-  $('#full_img').hover(function() {
-    $("#full_img").attr('src', '../img/icons/bascket_item_hover.svg');
-  }, function() {
-    $("#full_img").attr('src', '../img/icons/bascket_item.svg');
-  });
 
   //Форма Заказать звонок
   $(".phone-icons").click(function(event) {
